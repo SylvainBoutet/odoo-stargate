@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_dialing_computer" model="ir.actions.client">
+        <field name="name">Dialing Computer</field>
+        <field name="tag">chti_stargate.dialing_computer</field>
+    </record>
+</odoo>

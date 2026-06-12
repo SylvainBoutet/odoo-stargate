@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_stargate_planet_list" model="ir.ui.view">
+        <field name="name">stargate.planet.list</field>
+        <field name="model">stargate.planet</field>
+        <field name="arch" type="xml">
+            <list string="Destinations">
+                <field name="name"/>
+                <field name="designation"/>
+                <field name="gate_type"/>
+                <field name="address_display"/>
+                <field name="dial_count"/>
+                <field name="last_dial"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_stargate_planet_kanban" model="ir.ui.view">
+        <field name="name">stargate.planet.kanban</field>
+        <field name="model">stargate.planet</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="card">
+                        <div class="o_kanban_record_top">
+                            <div class="o_kanban_record_headings">
+                                <strong class="o_kanban_record_title">
+                                    <field name="name"/>
+                                </strong>
+                                <small class="o_kanban_record_subtitle text-muted">
+                                    <field name="designation"/>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="o_kanban_record_body">
+                            <field name="address_display"/>
+                        </div>
+                        <div class="o_kanban_record_bottom">
+                            <span class="badge text-bg-secondary">
+                                <field name="gate_type"/>
+                            </span>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_stargate_planet_form" model="ir.ui.view">
+        <field name="name">stargate.planet.form</field>
+        <field name="model">stargate.planet</field>
+        <field name="arch" type="xml">
+            <form string="Destination">
+                <header>
+                    <button name="action_dial" type="object" string="Dial"
+                            class="btn-primary" icon="fa-circle-o-notch"/>
+                </header>
+                <sheet>
+                    <field name="image_1920" widget="image" class="oe_avatar"/>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_dial_logs" type="object"
+                                class="oe_stat_button" icon="fa-history">
+                            <field name="dial_count" widget="statinfo" string="Dials"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="Destination name"/></h1>
+                        <h3><field name="designation" placeholder="P3X-000"/></h3>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="gate_type"/>
+                            <field name="region"/>
+                            <field name="address_display"/>
+                        </group>
+                        <group>
+                            <field name="glyph_count"/>
+                            <field name="last_dial"/>
+                        </group>
+                    </group>
+                    <group string="Address — Coordinate Glyphs">
+                        <group>
+                            <field name="glyph_1_id"/>
+                            <field name="glyph_2_id"/>
+                            <field name="glyph_3_id"/>
+                            <field name="glyph_4_id"/>
+                        </group>
+                        <group>
+                            <field name="glyph_5_id"/>
+                            <field name="glyph_6_id"/>
+                            <field name="glyph_7_id"/>
+                            <field name="point_of_origin_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Notes" name="notes">
+                            <field name="notes"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_stargate_planet_search" model="ir.ui.view">
+        <field name="name">stargate.planet.search</field>
+        <field name="model">stargate.planet</field>
+        <field name="arch" type="xml">
+            <search string="Destinations">
+                <field name="name" string="Designation / Name"
+                       filter_domain="['|', ('name', 'ilike', self), ('designation', 'ilike', self)]"/>
+                <field name="address_display" string="Gate Address"/>
+                <field name="region"/>
+                <field name="glyph_1_id" string="Contains Glyph"
+                       filter_domain="['|', '|', '|', '|', '|', '|',
+                                       ('glyph_1_id', '=', self), ('glyph_2_id', '=', self),
+                                       ('glyph_3_id', '=', self), ('glyph_4_id', '=', self),
+                                       ('glyph_5_id', '=', self), ('glyph_6_id', '=', self),
+                                       ('glyph_7_id', '=', self)]"/>
+                <separator/>
+                <filter name="visited" string="Visited"
+                        domain="[('dial_log_ids', '!=', False)]"/>
+                <filter name="unvisited" string="Never Dialed"
+                        domain="[('dial_log_ids', '=', False)]"/>
+                <filter name="recently_dialed" string="Dialed (30 days)"
+                        domain="[('dial_log_ids.dial_date', '&gt;=', (context_today() - relativedelta(days=30)).strftime('%Y-%m-%d'))]"/>
+                <separator/>
+                <filter name="incomplete" string="Address Not Fully Decoded"
+                        domain="['|', '|', '|', '|', '|',
+                                 ('glyph_1_id', '=', False), ('glyph_2_id', '=', False),
+                                 ('glyph_3_id', '=', False), ('glyph_4_id', '=', False),
+                                 ('glyph_5_id', '=', False), ('glyph_6_id', '=', False)]"/>
+                <filter name="extragalactic" string="Extra-galactic (8 symbols)"
+                        domain="[('glyph_7_id', '!=', False)]"/>
+                <separator/>
+                <filter name="milky_way" string="Milky Way" domain="[('gate_type', '=', 'milky_way')]"/>
+                <filter name="pegasus" string="Pegasus" domain="[('gate_type', '=', 'pegasus')]"/>
+                <filter name="universe" string="Universe" domain="[('gate_type', '=', 'universe')]"/>
+                <group name="group_by">
+                    <filter name="group_gate_type" string="Gate Type" context="{'group_by': 'gate_type'}"/>
+                    <filter name="group_region" string="Region" context="{'group_by': 'region'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_stargate_planet" model="ir.actions.act_window">
+        <field name="name">Destinations</field>
+        <field name="res_model">stargate.planet</field>
+        <field name="view_mode">list,form,kanban</field>
+        <field name="search_view_id" ref="view_stargate_planet_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add a Stargate destination</p>
+            <p>Record a planet and its gate address (six coordinate glyphs + point of origin).</p>
+        </field>
+    </record>
+</odoo>

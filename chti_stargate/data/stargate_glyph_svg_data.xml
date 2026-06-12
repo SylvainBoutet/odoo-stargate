@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Glyph shapes (SVG inline currentColor) + raster image, from Wikimedia Commons
+         "SVG Stargate Milky Way glyphs" (StargateGlyph01..39). Free reuse. -->
+    <record id="glyph_01" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1923"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph01.svg" viewBox="0 0 48 48"><defs
+     id="defs1926" /><path
+     style="fill:currentColor"
+     d="M 24.091255,16.26616 L 44.374182,43 C 44.374182,43 34.488091,43.011495 34.488091,43.011495 C 34.488091,43.011495 35.642931,41.930399 36.249098,41.25 C 37.686127,39.636989 37.287291,38.778661 31.154085,30.285105 C 27.494338,25.216912 24.275,21.070209 24,21.070209 C 23.725,21.070209 20.505662,25.216912 16.845915,30.285105 C 10.712709,38.778661 10.313873,39.636989 11.750902,41.25 C 12.342655,41.91422 13.259451,42.993021 13.259451,42.993021 L 3.6258176,43 C 3.6258176,43 24.091255,16.26616 24.091255,16.26616 z "
+     id="path1932"
+     sodipodi:nodetypes="ccssssssscs" /><path
+     sodipodi:type="arc"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path1934"
+     sodipodi:cx="24.571428"
+     sodipodi:cy="11.492064"
+     sodipodi:rx="4.5079365"
+     sodipodi:ry="4.5079365"
+     d="M 29.079365 11.492064 A 4.5079365 4.5079365 0 1 1  20.063492,11.492064 A 4.5079365 4.5079365 0 1 1  29.079365 11.492064 z"
+     transform="translate(-0.507937,-2.710122)" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g01.png"/>
+    </record>
+    <record id="glyph_02" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1920"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph02.svg" viewBox="0 0 48 48"><defs
+     id="defs1923" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 12.444444,11.555556 L 11.047619,19.936508 L 20.698413,28.190476 L 14.857143,41.269841 L 34.793651,41.650794 L 36.190476,29.333333 L 43.809524,20.698413 L 39.619048,11.936508"
+     id="path1929"
+     sodipodi:nodetypes="cccccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 20.444444,28.190476 L 36.190476,29.460318"
+     id="path2818"
+     sodipodi:nodetypes="cc" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 9.7777782,9.3968254 L 16.126985,9.5555554 L 12.357142,12.571429 L 9.7777782,9.3968254 z "
+     id="path3705" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 35.555556,9.3968252 L 41.396825,9.3968252 L 39.244778,12.952381 L 35.555556,9.3968252 z "
+     id="path3707" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g02.png"/>
+    </record>
+    <record id="glyph_03" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5622"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph03.svg" viewBox="0 0 48 48"><defs
+     id="defs5625" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 29.56654,28.562738 L 17.155894,27.558935 L 6.661597,40.425856 M 7.2091255,15.969582 L 17.155894,17.703422 L 31.939163,19.528517"
+     id="path5631"
+     sodipodi:nodetypes="cccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 17.338403,27.102662 L 17.338403,18.342206"
+     id="path5633"
+     sodipodi:nodetypes="cc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 32.577947,24.365019 L 36.319392,29.475285 L 27.285171,37.596958 L 22.996198,40.060837 L 23.178707,38.144487 L 27.467681,37.04943 L 35.406843,12.045627"
+     id="path5635"
+     sodipodi:nodetypes="ccccccc" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 7.026616,16.055766 L 5.4296577,12.319391 L 3.8326996,18.43346 L 7.026616,16.055766 z "
+     id="path10068" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 6.7528517,40.425856 L 2.8288973,40.647826 L 7.1178707,44.532319 L 6.7528517,40.425856 z "
+     id="path10070" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g03.png"/>
+    </record>
+    <record id="glyph_04" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1920"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph04.svg" viewBox="0 0 48 48"><defs
+     id="defs1923" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 30.095238,17.904762 L 19.68254,11.555556"
+     id="path1929" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 22.349206,13.460317 L 16.507937,30.222222 L 5.2063492,33.777778 L 16.253968,41.396825 L 16.507937,30.349206 L 26.539683,15.746031"
+     id="path1931"
+     sodipodi:nodetypes="cccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 22.095238,3.6825397 L 38.47619,12.952381"
+     id="path1933" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g04.png"/>
+    </record>
+    <record id="glyph_05" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1920"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph05.svg" viewBox="0 0 48 48"><defs
+     id="defs1923" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 4.4444444,35.301587 L 14.349206,34.412698 L 13.714286,44.31746 L 4.4444444,35.301587 z "
+     id="path1929" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 18.285714,30.47619 L 24.126984,24.507937"
+     id="path1931" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 34.412699,36.190476 L 31.619047,19.555556 L 15.746032,10.666667"
+     id="path1933"
+     sodipodi:nodetypes="ccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 31.492063,18.920635 L 39.365079,5.7142858"
+     id="path1935"
+     sodipodi:nodetypes="cc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 15.746032,10.666667 L 15.111111,6.984127 L 11.809523,11.555555 L 15.746032,10.666667 z "
+     id="path5479"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 39.238095,6.0952381 L 38.095238,2.5396825 L 42.920635,5.4603175 L 39.238095,6.0952381 z "
+     id="path5481"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 34.539683,36.190476 L 32.126985,38.984127 L 37.587301,38.095238 L 34.539683,36.190476 z "
+     id="path5483"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g05.png"/>
+    </record>
+    <record id="glyph_06" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1920"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph06.svg" viewBox="0 0 48 48"><defs
+     id="defs1923" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 6.8571429,5.2063492 L 20.31746,10.666667 L 32.888889,4.1904762 L 44.31746,21.460317 L 32.634921,36.952381 L 11.809524,37.333333 L 9.1428571,40.380952"
+     id="path1929" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 32.380953,5.2063492 L 32.507937,35.809524"
+     id="path1931"
+     sodipodi:nodetypes="cc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g06.png"/>
+    </record>
+    <record id="glyph_07" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1926"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph07.svg" viewBox="0 0 48 48"><defs
+     id="defs1929" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 34.038023,6.5703422 L 34.129278,18.524715 L 23.543726,24.091255 L 23.634981,43.619772"
+     id="path1935" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 34.038023,7.2091255 L 31.30038,4.4714829 L 36.775666,4.3802281 L 34.038023,7.2091255 z "
+     id="path2824"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 23.634981,43.163498 L 26.09886,45.444867 L 20.988593,45.444867 L 23.634981,43.163498 z "
+     id="path2826"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g07.png"/>
+    </record>
+    <record id="glyph_08" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1920"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph08.svg" viewBox="0 0 48 48"><defs
+     id="defs1923" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 16.380953,6.984127 L 22.222222,16.253968 L 10.793651,16.507937 L 16.380953,6.984127 z "
+     id="path1929"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 34.666667,29.079365 L 40.888889,38.222222 L 29.206349,38.349206 L 34.666667,29.079365 z "
+     id="path2818"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g08.png"/>
+    </record>
+    <record id="glyph_09" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1920"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph09.svg" viewBox="0 0 48 48"><defs
+     id="defs1923" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 7.8479087,32.760456 L 3.7414449,37.596958 L 6.661597,43.619772 L 19.437262,43.528517 L 23.087452,32.486692 L 29.019011,23.81749 L 40.51711,20.34981"
+     id="path1929" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 38.874525,12.86692 L 41.247149,20.34981 L 40.060837,29.110266"
+     id="path1931"
+     sodipodi:nodetypes="ccc" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 39.226507,13.231939 L 40.608366,9.5817485 L 35.771862,11.621561 L 39.226507,13.231939 z "
+     id="path1933"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 40.054886,28.562738 L 37.323194,31.17155 L 41.977187,31.84791 L 40.054886,28.562738 z "
+     id="path1935"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 7.2091255,33.581749 L 7.3003802,29.292776 L 10.95057,32.942966 L 7.2091255,33.581749 z "
+     id="path1937"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g09.png"/>
+    </record>
+    <record id="glyph_10" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1923"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph10.svg" viewBox="0 0 48 48"><defs
+     id="defs1926" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 23.873015,12.31746 L 15.365079,11.428571 L 9.5238095,16.761905 L 10.539683,25.015873 L 18.412698,33.142857 L 29.206349,35.428571 L 20.952381,43.682539 L 18.920635,34.285715"
+     id="path1932"
+     sodipodi:nodetypes="cccccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 29.206349,14.349206 L 34.920635,22.730159 L 38.857143,12.952381 L 29.206349,14.349206 z "
+     id="path2821"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g10.png"/>
+    </record>
+    <record id="glyph_11" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1923"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph11.svg" viewBox="0 0 48 48"><defs
+     id="defs1926" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 40.882129,11.863118 L 28.653992,18.707224 L 7.3003802,25.460076 L 30.296578,33.581749 L 28.836502,19.072244"
+     id="path1932"
+     sodipodi:nodetypes="ccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 22.174905,15.422053 L 26.555133,13.779468"
+     id="path2821" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 41.155894,11.498099 L 41.064639,7.756654 L 45.171103,14.053232 L 41.155894,11.498099 z "
+     id="path3708"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g11.png"/>
+    </record>
+    <record id="glyph_12" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1923"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph12.svg" viewBox="0 0 48 48"><defs
+     id="defs1926" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 15.695817,40.790875 L 13.140684,38.235741 L 9.3992395,38.144487 L 3.5589354,24.730038 L 6.5703422,20.988593 L 27.376426,21.353612 L 30.661597,19.711027 L 34.403042,12.86692 L 42.61597,24.638783 L 37.414449,31.209125 L 31.117871,20.34981"
+     id="path1932" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 13.140684,15.695817 L 17.885931,21.353613 L 20.532319,18.068441 L 14.418251,13.961977 L 13.140684,15.695817 z "
+     id="path2821"
+     sodipodi:nodetypes="ccccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g12.png"/>
+    </record>
+    <record id="glyph_13" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3767"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph13.svg" viewBox="0 0 48 48"><defs
+     id="defs3770" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 4.1977186,16.152091 L 20.1673,35.954373 L 28.015209,9.9467681 L 43.802282,20.897339"
+     id="path3776"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 4.7452471,16.69962 L 5.2927756,13.049429 L 1.0038023,16.608365 L 4.7452471,16.69962 z "
+     id="path4663"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 43.254753,20.1673 L 47.087452,19.528517 L 42.889734,24.730038 L 43.254753,20.1673 z "
+     id="path5550"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g13.png"/>
+    </record>
+    <record id="glyph_14" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg6470"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph14.svg" viewBox="0 0 48 48"><defs
+     id="defs6473" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 12.593156,6.296578 L 4.9277567,41.247148 L 41.520913,35.13308"
+     id="path6479"
+     sodipodi:nodetypes="ccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 25.91635,12.136882 L 23.178707,23.361217 L 34.768061,21.444867 L 25.91635,12.136882 z "
+     id="path6481" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 12.319391,6.9353612 L 10.038023,3.2851711 L 16.425855,5.2015209 L 12.319391,6.9353612 z "
+     id="path9138"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 40.060837,35.315589 L 42.524715,31.391635 L 43.711027,38.053232 L 40.060837,35.315589 z "
+     id="path10025"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g14.png"/>
+    </record>
+    <record id="glyph_15" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg10945"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph15.svg" viewBox="0 0 48 48"><defs
+     id="defs10948" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 39.513308,12.410646 L 32.760456,33.39924 L 13.323194,31.756654 L 4.8365019,23.634981 L 37.779468,15.695817"
+     id="path10954" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g15.png"/>
+    </record>
+    <record id="glyph_16" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg11898"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph16.svg" viewBox="0 0 48 48"><defs
+     id="defs11901" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 32.030418,30.844106 L 32.030418,34.859316 L 22.539924,40.790875 L 11.863118,34.494297 L 10.220532,22.26616 L 14.144487,12.501901 L 19.163498,7.4828897 L 21.809886,7.4828897 L 27.558935,17.977186 L 27.558935,24.547529 L 32.030418,30.844106 z "
+     id="path11909" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 13.04943,33.490494 L 31.117871,32.212928"
+     id="path12796" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g16.png"/>
+    </record>
+    <record id="glyph_17" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg13716"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph17.svg" viewBox="0 0 48 48"><defs
+     id="defs13719" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 14.418251,10.768061 L 3.1026616,22.26616 L 44.441065,29.56654 L 43.711026,18.980989"
+     id="path13725"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 14.053232,11.224335 L 13.596958,7.2091254 L 18.342205,11.406844 L 14.053232,11.224335 z "
+     id="path14612"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 43.711027,19.254753 L 40.608365,16.88213 L 46.26616,16.69962 L 43.711027,19.254753 z "
+     id="path15499"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g17.png"/>
+    </record>
+    <record id="glyph_18" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1923"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph18.svg" viewBox="0 0 48 48"><defs
+     id="defs1926" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 3.3015873,19.301587 L 13.206349,13.333333 L 27.174603,13.460317 L 45.714286,26.285714"
+     id="path1932" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 29.206349,16.126984 L 25.777778,21.84127 L 26.666667,30.984127"
+     id="path2821" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 6.2222222,19.174603 L 10.285714,24.253968 L 10.412698,31.492063 L 6.0952381,35.68254"
+     id="path3708" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g18.png"/>
+    </record>
+    <record id="glyph_19" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4672"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph19.svg" viewBox="0 0 48 48"><defs
+     id="defs4675" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 5.3333333,40 L 5.3333333,32.761905 L 17.142857,21.587302 L 18.412698,5.3333333"
+     id="path4681" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 31.619048,22.603175 L 30.222222,27.68254 L 17.142857,36.825397 L 17.015873,42.412698"
+     id="path5568" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 17.52381,21.84127 L 29.079365,26.285714"
+     id="path6455" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 29.206349,11.936508 L 35.174603,11.936508 L 31.873016,7.2380952 L 29.206349,11.936508 z "
+     id="path7342" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g19.png"/>
+    </record>
+    <record id="glyph_20" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8253"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph20.svg" viewBox="0 0 48 48"><defs
+     id="defs8256" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 5.7490494,8.851711 L 29.749049,21.627376 L 43.163498,36.775665 L 29.475285,46.174905 L 29.475285,22.539924"
+     id="path8262"
+     sodipodi:nodetypes="ccccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g20.png"/>
+    </record>
+    <record id="glyph_21" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg9173"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph21.svg" viewBox="0 0 48 48"><defs
+     id="defs9176" /><path
+     sodipodi:type="arc"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path9182"
+     sodipodi:cx="28.471483"
+     sodipodi:cy="9.3992395"
+     sodipodi:rx="4.5627375"
+     sodipodi:ry="4.5627375"
+     d="M 33.034221 9.3992395 A 4.5627375 4.5627375 0 1 1  23.908746,9.3992395 A 4.5627375 4.5627375 0 1 1  33.034221 9.3992395 z"
+     transform="translate(-1.825095,-0.730038)" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 26.463878,13.505703 L 27.923954,22.448669 L 32.942966,29.475285 L 40.790875,37.323194 C 40.790875,37.323194 12.479088,38.60076 12.479088,38.60076 C 12.479088,38.60076 9.684411,41.292775 9.684411,41.292775 C 9.684411,41.292775 5.0646391,38.509505 5.0646391,38.509505 C 5.0646391,38.509505 9.6958177,35.863117 9.6958177,35.863117 C 9.6958177,35.863117 11.954373,38.326995 11.954373,38.326995"
+     id="path10069"
+     sodipodi:nodetypes="ccccccccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g21.png"/>
+    </record>
+    <record id="glyph_22" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg10980"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph22.svg" viewBox="0 0 48 48"><defs
+     id="defs10983" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 27.558935,20.34981 L 26.372624,41.520913 L 10.585551,32.304183 L 9.6730038,29.749049 L 11.224334,25.277567 L 8.7604563,20.34981 L 10.859316,15.969582 L 8.2129278,10.95057 L 10.494297,7.026616 L 8.2129278,4.1977186 L 11.224335,2.2813688 L 15.604563,2.4638783 L 12.958175,7.391635 L 15.513308,11.680608 L 13.505703,16.425855 L 14.692015,21.171103 L 13.140685,29.019011 L 25.91635,28.380228"
+     id="path10989"
+     sodipodi:nodetypes="cccccccccccccccccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 27.558935,21.171103 L 24.912548,18.707224 L 30.479087,18.707224 L 27.558935,21.171103 z "
+     id="path11876"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g22.png"/>
+    </record>
+    <record id="glyph_23" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg12796"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph23.svg" viewBox="0 0 48 48"><defs
+     id="defs12799" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 11.498099,37.961977 L 2.6463878,14.509506 L 46.904943,18.159696 L 11.498099,37.961977 z "
+     id="path12805"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g23.png"/>
+    </record>
+    <record id="glyph_24" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg13824"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph24.svg" viewBox="0 0 48 48"><defs
+     id="defs13827" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 8.6692015,38.783269 L 18.524715,20.897338 L 35.954372,6.2053232"
+     id="path13833"
+     sodipodi:nodetypes="ccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 8.7604563,38.692015 L 9.8555133,42.068441 L 5.1102662,39.239544 L 8.7604563,38.692015 z "
+     id="path14720"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 35.680608,6.661597 L 35.498098,3.1939163 L 39.148289,7.2091255 L 35.680608,6.661597 z "
+     id="path15607"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g24.png"/>
+    </record>
+    <record id="glyph_25" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg16542"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph25.svg" viewBox="0 0 48 48"><defs
+     id="defs16545" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 13.596958,41.247148 L 9.21673,38.692015 L 8.6692015,25.91635 L 14.60076,18.342205 L 14.78327,10.768061 L 33.581749,4.4714829 L 33.39924,14.692015 L 39.513308,34.494297 L 30.935361,33.490494 L 31.847909,25.460076 L 30.570342,15.422053"
+     id="path16551" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 15.239544,15.604563 L 32.669202,14.60076"
+     id="path17438" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g25.png"/>
+    </record>
+    <record id="glyph_26" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg18358"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph26.svg" viewBox="0 0 48 48"><defs
+     id="defs18361" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 5.6577947,11.589354 L 16.243346,11.406844 L 21.809886,13.596958 L 25.551331,17.247148 L 43.254753,14.78327 L 45.536122,32.942966 L 15.057034,37.414449 L 25.003802,17.338403"
+     id="path18367"
+     sodipodi:nodetypes="cccccccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 6.5703422,11.863118 L 4.3802281,8.3954373 L 2.7376425,14.235741 L 6.5703422,11.863118 z "
+     id="path19254"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g26.png"/>
+    </record>
+    <record id="glyph_27" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg20174"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph27.svg" viewBox="0 0 48 48"><defs
+     id="defs20177" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 6.5703422,27.558935 L 41.064639,16.152091"
+     id="path20183" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 24.730038,20.988593 L 3.9239544,14.874525"
+     id="path20185" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 4.4714829,15.239544 L 3.2851711,11.589353 L 1.2775665,17.155894 L 4.4714829,15.239544 z "
+     id="path21957"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 6.8441065,27.102662 L 3.4676806,25.91635 L 6.1140684,31.11787 L 6.8441065,27.102662 z "
+     id="path22844"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 40.334601,16.608365 L 41.338403,12.775665 L 43.528517,18.068441 L 40.334601,16.608365 z "
+     id="path23731"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g27.png"/>
+    </record>
+    <record id="glyph_28" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg24651"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph28.svg" viewBox="0 0 48 48"><defs
+     id="defs24654" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 5.5665399,14.874525 L 9.8555133,40.425856 L 32.577947,39.422053 L 37.505703,26.463878"
+     id="path24660" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 8.121673,35.315589 L 5.2927757,38.144487 L 7.756654,42.068441 L 10.768061,43.802281 L 15.239544,40.699619"
+     id="path25547"
+     sodipodi:nodetypes="ccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 18.798479,14.053232 L 22.722433,7.2091255 L 28.197719,14.235741 L 18.798479,14.053232 z "
+     id="path26434" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g28.png"/>
+    </record>
+    <record id="glyph_29" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg27354"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph29.svg" viewBox="0 0 48 48"><defs
+     id="defs27357" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 6.661597,41.794677 L 14.418251,42.524715 L 15.604563,37.779468 L 12.593156,33.21673 L 12.593155,30.205324 L 16.790875,25.733841 L 22.266159,28.745247 L 22.357414,25.642586"
+     id="path27363"
+     sodipodi:nodetypes="cccccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 20.532319,26.372623 L 23.087452,24.547529 L 29.475285,24.182509 L 31.026616,21.262357 L 32.486692,11.680609 L 40.973385,9.8555133 L 41.247149,7.391635 L 39.787072,5.4752852 L 29.840304,9.9467681 L 27.65019,19.437262 L 28.015209,23.81749"
+     id="path27365"
+     sodipodi:nodetypes="ccccccccccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g29.png"/>
+    </record>
+    <record id="glyph_30" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg29170"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph30.svg" viewBox="0 0 48 48"><defs
+     id="defs29173" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 11.496167,9.321504 L 17.484217,18.960227 L 19.555556,29.460317 L 13.968254,42.412698 L 36.190476,37.571368 L 26.666667,27.428571 L 23.694369,17.04774 L 24.531596,5.7302191 L 11.496167,9.321504 z "
+     id="path29179"
+     sodipodi:nodetypes="ccccccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 19.738066,27.059207 L 25.872895,25.44028"
+     id="path30066"
+     sodipodi:nodetypes="cc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 12.31746,9.6507937 L 9.5238095,5.7142857 L 8.1825095,11.337316 L 12.31746,9.6507937 z "
+     id="path30954"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 24.071458,6.333273 L 24.178647,2.0674754 L 28.246002,5.8055405 L 24.071458,6.333273 z "
+     id="path31841"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 35.079486,36.825397 L 39.527793,35.87712 L 37.333333,41.015873 L 35.079486,36.825397 z "
+     id="path32728"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 14.896735,41.686523 L 10.995957,41.468284 L 14.206289,45.916591 L 14.896735,41.686523 z "
+     id="path33615"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g30.png"/>
+    </record>
+    <record id="glyph_31" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1923"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph31.svg" viewBox="0 0 48 48"><defs
+     id="defs1926" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 29.587302,46.222223 L 20.571429,1.3968254 L 2.7936508,16.253968 L 46.47619,27.936508 L 29.587302,46.222223 z "
+     id="path1932"
+     sodipodi:nodetypes="ccccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g31.png"/>
+    </record>
+    <record id="glyph_32" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2878"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph32.svg" viewBox="0 0 48 48"><defs
+     id="defs2881" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 3.5589354,21.809887 L 12.410647,32.121674 L 24.638783,22.539925 L 39.787072,15.513309 L 46.631179,22.904944 L 24.456274,25.186313 L 28.745247,29.657795 L 35.31559,32.851712 L 45.262358,33.307986"
+     id="path2887" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 3.9239544,22.357415 L 4.5627376,18.707225 L 0.365019,21.992396 L 3.9239544,22.357415 z "
+     id="path3774"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 44.167301,33.490495 L 46.904943,30.752853 L 46.722434,36.228138 L 44.167301,33.490495 z "
+     id="path4661"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g32.png"/>
+    </record>
+    <record id="glyph_33" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5581"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph33.svg" viewBox="0 0 48 48"><defs
+     id="defs5584" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 30.095238,40.126984 L 28.698413,34.666667 L 3.4285714,17.015873 L 13.714286,2.9206349 L 38.349206,20.952381"
+     id="path5590" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 42.285714,16.634921 L 29.079365,34.793651"
+     id="path6477" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 41.904762,17.142857 L 40.507936,12.698412 L 45.968254,17.269841 L 41.904762,17.142857 z "
+     id="path7364"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g33.png"/>
+    </record>
+    <record id="glyph_34" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8284"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph34.svg" viewBox="0 0 48 48"><defs
+     id="defs8287" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 26.920152,13.323194 L 16.060837,2.8288973 L 8.9429658,3.5589354 L 7.8479087,7.8479087 L 12.593156,11.771863 L 14.509506,9.581749 L 15.513308,3.8326996"
+     id="path8293"
+     sodipodi:nodetypes="ccccccc" /><path
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 26.920153,13.140684 L 26.828897,17.064638 L 30.479088,12.86692 L 26.920153,13.140684 z "
+     id="path9180"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 38.053232,37.688213 L 31.30038,37.505703 L 28.380228,29.749049 L 26.281369,29.019011 L 22.996198,31.574144 L 20.806084,26.646388"
+     id="path10067" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 18.61597,24.273764 L 18.61597,21.444867 L 15.330798,19.802281 L 13.414449,21.627376 L 16.060837,24.18251 L 18.61597,24.273764 z "
+     id="path10954" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g34.png"/>
+    </record>
+    <record id="glyph_35" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg11874"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph35.svg" viewBox="0 0 48 48"><defs
+     id="defs11877" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 4.8365019,6.661597 L 20.623574,10.038023 L 23.81749,14.235741 L 25.551331,19.619772 L 25.55133,33.764258 L 30.114068,36.501901 L 39.604563,37.688213"
+     id="path11883"
+     sodipodi:nodetypes="ccccccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 5.6577947,6.8441065 L 4.0152091,3.2851711 L 2.3726236,9.1254752 L 5.6577947,6.8441065 z "
+     id="path13657"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 38.96578,37.414449 L 41.794677,35.406844 L 40.51711,40.973384 L 38.96578,37.414449 z "
+     id="path14544"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g35.png"/>
+    </record>
+    <record id="glyph_36" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg15464"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph36.svg" viewBox="0 0 48 48"><defs
+     id="defs15467" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 5.9315589,6.0228137 L 13.323194,13.779468 L 17.429658,21.262357 L 17.520913,29.931559 L 13.414449,40.51711"
+     id="path15473" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 31.847909,36.228137 L 28.106464,39.330798 L 30.022814,41.338403 L 35.406844,41.612167 L 31.847909,36.228137 z "
+     id="path16360"
+     sodipodi:nodetypes="ccccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 6.2965779,6.2965779 L 6.7528517,2.9201521 L 2.6463878,6.5703422 L 6.2965779,6.2965779 z "
+     id="path17247"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 13.505703,40.060837 L 10.038023,40.69962 L 15.057034,43.893536 L 13.505703,40.060837 z "
+     id="path18134"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g36.png"/>
+    </record>
+    <record id="glyph_37" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg19054"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph37.svg" viewBox="0 0 48 48"><defs
+     id="defs19057" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 7.7460317,9.3968254 L 20.31746,12.571428"
+     id="path19063"
+     sodipodi:nodetypes="cc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 25.777778,19.936508 L 30.603174,26.412698"
+     id="path19950"
+     sodipodi:nodetypes="cc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 34.412698,35.809524 L 33.015873,43.68254 L 40.253968,40.761905 L 34.412698,35.809524 z "
+     id="path20837" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 8.2539683,9.5238096 L 6.0952381,5.8412699 L 4.5714286,11.428571 L 8.2539683,9.5238096 z "
+     id="path21724"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 19.301587,12.317461 L 22.857143,10.539683 L 21.333333,15.873015 L 19.301587,12.317461 z "
+     id="path22611"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g37.png"/>
+    </record>
+    <record id="glyph_38" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg23531"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph38.svg" viewBox="0 0 48 48"><defs
+     id="defs23534" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 11.555556,3.8095238 L 26.920635,12.952381 L 35.301587,25.396825 L 39.111111,35.809524 L 39.238095,41.269841"
+     id="path23540"
+     sodipodi:nodetypes="ccccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 12.190476,3.8095238 L 11.428571,0.63492063 L 8.2539683,5.4603175 L 12.190476,3.8095238 z "
+     id="path24427" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 39.111111,40.253968 L 36.571428,43.809524 L 42.285714,42.793651 L 39.111111,40.253968 z "
+     id="path25314"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g38.png"/>
+    </record>
+    <record id="glyph_39" model="stargate.glyph">
+        <field name="svg"><![CDATA[<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg26234"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+  
+  
+   version="1.0"
+   sodipodi:docbase="E:\Bryan\Temp\SG Glyphs"
+   sodipodi:docname="StargateGlyph39.svg" viewBox="0 0 48 48"><defs
+     id="defs26237" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 6.4761905,8 L 12.825397,16.507937 L 19.428571,10.793651 L 40.634921,4.6984127 L 37.587302,11.936508 L 41.904762,30.730159 L 44.571429,34.285714 L 39.492063,33.777778 L 41.777778,30.984127"
+     id="path26243"
+     sodipodi:nodetypes="ccccccccc" /><path
+     style="fill:none;fill-rule:evenodd;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 18.793651,12.31746 L 24.761905,30.730159"
+     id="path27130" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 6.984127,8.6349207 L 7.3650794,4.1904761 L 2.6666667,8.5079365 L 6.984127,8.6349207 z "
+     id="path28017"
+     sodipodi:nodetypes="cccc" /><path
+     style="fill:currentColor;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="M 24.507937,29.968254 L 22.857143,34.031746 L 27.936508,32.253969 L 24.507937,29.968254 z "
+     id="path28904"
+     sodipodi:nodetypes="cccc" /></svg>]]></field>
+        <field name="image" type="base64" file="chti_stargate/static/glyphs/g39.png"/>
+    </record>
+</odoo>

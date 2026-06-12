@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- The 39 canonical Milky Way glyphs (constellations). Glyph 01 (Earth) is
+         the point of origin. Numbering follows the rdanderson.com reference,
+         which the gate addresses below rely on. -->
+    <record id="glyph_01" model="stargate.glyph">
+        <field name="number">1</field>
+        <field name="name">Earth</field>
+        <field name="is_point_of_origin">1</field>
+    </record>
+    <record id="glyph_02" model="stargate.glyph">
+        <field name="number">2</field>
+        <field name="name">Crater</field>
+    </record>
+    <record id="glyph_03" model="stargate.glyph">
+        <field name="number">3</field>
+        <field name="name">Virgo</field>
+    </record>
+    <record id="glyph_04" model="stargate.glyph">
+        <field name="number">4</field>
+        <field name="name">Bootes</field>
+    </record>
+    <record id="glyph_05" model="stargate.glyph">
+        <field name="number">5</field>
+        <field name="name">Centaurus</field>
+    </record>
+    <record id="glyph_06" model="stargate.glyph">
+        <field name="number">6</field>
+        <field name="name">Libra</field>
+    </record>
+    <record id="glyph_07" model="stargate.glyph">
+        <field name="number">7</field>
+        <field name="name">Serpens Caput</field>
+    </record>
+    <record id="glyph_08" model="stargate.glyph">
+        <field name="number">8</field>
+        <field name="name">Norma</field>
+    </record>
+    <record id="glyph_09" model="stargate.glyph">
+        <field name="number">9</field>
+        <field name="name">Scorpio</field>
+    </record>
+    <record id="glyph_10" model="stargate.glyph">
+        <field name="number">10</field>
+        <field name="name">Corona Australis</field>
+    </record>
+    <record id="glyph_11" model="stargate.glyph">
+        <field name="number">11</field>
+        <field name="name">Scutum</field>
+    </record>
+    <record id="glyph_12" model="stargate.glyph">
+        <field name="number">12</field>
+        <field name="name">Sagittarius</field>
+    </record>
+    <record id="glyph_13" model="stargate.glyph">
+        <field name="number">13</field>
+        <field name="name">Aquila</field>
+    </record>
+    <record id="glyph_14" model="stargate.glyph">
+        <field name="number">14</field>
+        <field name="name">Microscopium</field>
+    </record>
+    <record id="glyph_15" model="stargate.glyph">
+        <field name="number">15</field>
+        <field name="name">Capricorn</field>
+    </record>
+    <record id="glyph_16" model="stargate.glyph">
+        <field name="number">16</field>
+        <field name="name">Pisces Austrinus</field>
+    </record>
+    <record id="glyph_17" model="stargate.glyph">
+        <field name="number">17</field>
+        <field name="name">Equuleus</field>
+    </record>
+    <record id="glyph_18" model="stargate.glyph">
+        <field name="number">18</field>
+        <field name="name">Aquarius</field>
+    </record>
+    <record id="glyph_19" model="stargate.glyph">
+        <field name="number">19</field>
+        <field name="name">Pegasus</field>
+    </record>
+    <record id="glyph_20" model="stargate.glyph">
+        <field name="number">20</field>
+        <field name="name">Sculptor</field>
+    </record>
+    <record id="glyph_21" model="stargate.glyph">
+        <field name="number">21</field>
+        <field name="name">Pisces</field>
+    </record>
+    <record id="glyph_22" model="stargate.glyph">
+        <field name="number">22</field>
+        <field name="name">Andromeda</field>
+    </record>
+    <record id="glyph_23" model="stargate.glyph">
+        <field name="number">23</field>
+        <field name="name">Triangulum</field>
+    </record>
+    <record id="glyph_24" model="stargate.glyph">
+        <field name="number">24</field>
+        <field name="name">Aries</field>
+    </record>
+    <record id="glyph_25" model="stargate.glyph">
+        <field name="number">25</field>
+        <field name="name">Perseus</field>
+    </record>
+    <record id="glyph_26" model="stargate.glyph">
+        <field name="number">26</field>
+        <field name="name">Cetus</field>
+    </record>
+    <record id="glyph_27" model="stargate.glyph">
+        <field name="number">27</field>
+        <field name="name">Taurus</field>
+    </record>
+    <record id="glyph_28" model="stargate.glyph">
+        <field name="number">28</field>
+        <field name="name">Auriga</field>
+    </record>
+    <record id="glyph_29" model="stargate.glyph">
+        <field name="number">29</field>
+        <field name="name">Eridanus</field>
+    </record>
+    <record id="glyph_30" model="stargate.glyph">
+        <field name="number">30</field>
+        <field name="name">Orion</field>
+    </record>
+    <record id="glyph_31" model="stargate.glyph">
+        <field name="number">31</field>
+        <field name="name">Canis Minor</field>
+    </record>
+    <record id="glyph_32" model="stargate.glyph">
+        <field name="number">32</field>
+        <field name="name">Monoceros</field>
+    </record>
+    <record id="glyph_33" model="stargate.glyph">
+        <field name="number">33</field>
+        <field name="name">Gemini</field>
+    </record>
+    <record id="glyph_34" model="stargate.glyph">
+        <field name="number">34</field>
+        <field name="name">Hydra</field>
+    </record>
+    <record id="glyph_35" model="stargate.glyph">
+        <field name="number">35</field>
+        <field name="name">Lynx</field>
+    </record>
+    <record id="glyph_36" model="stargate.glyph">
+        <field name="number">36</field>
+        <field name="name">Cancer</field>
+    </record>
+    <record id="glyph_37" model="stargate.glyph">
+        <field name="number">37</field>
+        <field name="name">Sextans</field>
+    </record>
+    <record id="glyph_38" model="stargate.glyph">
+        <field name="number">38</field>
+        <field name="name">Leo Minor</field>
+    </record>
+    <record id="glyph_39" model="stargate.glyph">
+        <field name="number">39</field>
+        <field name="name">Leo</field>
+    </record>
+</odoo>

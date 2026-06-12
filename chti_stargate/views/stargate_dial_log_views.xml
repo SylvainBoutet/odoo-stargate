@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_stargate_dial_log_list" model="ir.ui.view">
+        <field name="name">stargate.dial.log.list</field>
+        <field name="model">stargate.dial.log</field>
+        <field name="arch" type="xml">
+            <list string="Dial Log">
+                <field name="dial_date"/>
+                <field name="planet_id"/>
+                <field name="address_display"/>
+                <field name="user_id"/>
+                <field name="success" widget="boolean_toggle"/>
+                <field name="note"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_stargate_dial_log_form" model="ir.ui.view">
+        <field name="name">stargate.dial.log.form</field>
+        <field name="model">stargate.dial.log</field>
+        <field name="arch" type="xml">
+            <form string="Dial Log">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="planet_id"/>
+                            <field name="address_display"/>
+                            <field name="dial_date"/>
+                        </group>
+                        <group>
+                            <field name="user_id"/>
+                            <field name="success"/>
+                        </group>
+                    </group>
+                    <field name="note" placeholder="Note..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_stargate_dial_log_search" model="ir.ui.view">
+        <field name="name">stargate.dial.log.search</field>
+        <field name="model">stargate.dial.log</field>
+        <field name="arch" type="xml">
+            <search string="Dial Log">
+                <field name="planet_id"/>
+                <field name="user_id"/>
+                <field name="address_display" string="Gate Address"/>
+                <separator/>
+                <filter name="success" string="Wormhole Established"
+                        domain="[('success', '=', True)]"/>
+                <filter name="failed" string="Failed"
+                        domain="[('success', '=', False)]"/>
+                <separator/>
+                <filter name="today" string="Today"
+                        domain="[('dial_date', '&gt;=', context_today().strftime('%Y-%m-%d'))]"/>
+                <filter name="last_7_days" string="Last 7 Days"
+                        domain="[('dial_date', '&gt;=', (context_today() - relativedelta(days=7)).strftime('%Y-%m-%d'))]"/>
+                <separator/>
+                <filter name="my_dials" string="My Dials" domain="[('user_id', '=', uid)]"/>
+                <group name="group_by">
+                    <filter name="group_planet" string="Destination" context="{'group_by': 'planet_id'}"/>
+                    <filter name="group_user" string="Dialed By" context="{'group_by': 'user_id'}"/>
+                    <filter name="group_date" string="Dial Date" context="{'group_by': 'dial_date:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_stargate_dial_log" model="ir.actions.act_window">
+        <field name="name">Dial Log</field>
+        <field name="res_model">stargate.dial.log</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_stargate_dial_log_search"/>
+    </record>
+</odoo>

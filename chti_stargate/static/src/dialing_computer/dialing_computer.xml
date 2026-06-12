@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="chti_stargate.DialingComputer">
+        <div class="o_stargate" t-ref="root" t-att-class="{ 'o_stargate_engaged': state.status === 'ENGAGED' }">
+
+            <!-- Barre de contrôle -->
+            <div class="o_sg_topbar">
+                <div class="o_sg_topbar_left">
+                    <button class="o_sg_btn o_sg_btn_back" t-on-click="exit"
+                            t-att-disabled="state.dialing" title="Back to Odoo">
+                        ⟵ Odoo
+                    </button>
+                    <span class="o_sg_brand">STARGATE · DIALING COMPUTER</span>
+                </div>
+                <div class="o_sg_controls">
+                    <select class="o_sg_select" t-on-change="loadPlanet">
+                        <option value="">— Quick dial a destination —</option>
+                        <t t-foreach="state.planets" t-as="planet" t-key="planet.id">
+                            <option t-att-value="planet.id"
+                                    t-att-selected="planet.id === state.selectedPlanetId">
+                                <t t-esc="planet.name"/>
+                                <t t-if="planet.designation"> (<t t-esc="planet.designation"/>)</t>
+                            </option>
+                        </t>
+                    </select>
+                    <button class="o_sg_btn o_sg_btn_dial" t-on-click="dial"
+                            t-att-disabled="state.dialing or !state.sequence.length">
+                        DIAL
+                    </button>
+                    <button class="o_sg_btn" t-on-click="removeLast"
+                            t-att-disabled="state.dialing or !state.sequence.length">⌫</button>
+                    <button class="o_sg_btn" t-on-click="reset"
+                            t-att-disabled="state.dialing">RESET</button>
+                </div>
+            </div>
+
+            <div class="o_sg_body">
+
+                <!-- Palette des 39 glyphes -->
+                <div class="o_sg_palette">
+                    <div class="o_sg_panel_title">GLYPHS · FILE ARCHIVE</div>
+                    <div class="o_sg_glyph_grid">
+                        <t t-foreach="state.glyphs" t-as="glyph" t-key="glyph.id">
+                            <button class="o_sg_glyph"
+                                    t-att-class="{ 'o_sg_glyph_used': state.sequence.some(g => g.id === glyph.id),
+                                                   'o_sg_glyph_poo': glyph.is_point_of_origin }"
+                                    t-att-title="glyph.number + ' · ' + glyph.name"
+                                    t-on-click="() => this.addGlyph(glyph)">
+                                <div class="o_sg_glyph_shape" t-out="glyph.shape"/>
+                                <span class="o_sg_glyph_num" t-esc="glyph.number"/>
+                            </button>
+                        </t>
+                    </div>
+                </div>
+
+                <!-- Anneau central -->
+                <div class="o_sg_gate">
+                  <div class="o_sg_gate_ring">
+                    <svg class="o_sg_gate_svg" t-att-viewBox="'0 0 ' + gateSize + ' ' + gateSize"
+                         preserveAspectRatio="xMidYMid meet">
+                        <!-- Anneaux -->
+                        <circle class="o_sg_ring_outer" t-att-cx="center" t-att-cy="center" r="248"/>
+                        <circle class="o_sg_ring_track" t-att-cx="center" t-att-cy="center" r="206"/>
+                        <circle class="o_sg_ring_inner" t-att-cx="center" t-att-cy="center" r="150"/>
+
+                        <!-- Graduations (39 glyphes) -->
+                        <g class="o_sg_ticks">
+                            <t t-foreach="ticks" t-as="tick" t-key="tick.index">
+                                <line class="o_sg_tick" x1="270" y1="58" x2="270" y2="74"
+                                      t-att-transform="'rotate(' + tick.rotation + ' ' + center + ' ' + center + ')'"/>
+                            </t>
+                        </g>
+
+                        <!-- Vortex (event horizon) -->
+                        <circle class="o_sg_horizon" t-att-cx="center" t-att-cy="center" r="148"
+                                t-att-style="state.status === 'ENGAGED' ? 'opacity:1' : 'opacity:0'"/>
+                        <circle class="o_sg_horizon_core" t-att-cx="center" t-att-cy="center" r="60"
+                                t-att-style="state.status === 'ENGAGED' ? 'opacity:1' : 'opacity:0'"/>
+
+                        <!-- Chevrons -->
+                        <g class="o_sg_chevrons">
+                            <t t-foreach="chevrons" t-as="chevron" t-key="chevron.index">
+                                <g t-att-transform="'translate(' + chevron.x + ' ' + chevron.y + ') rotate(' + chevron.rotation + ')'">
+                                    <polygon class="o_sg_chevron"
+                                             t-att-class="{ 'o_sg_chevron_locked': chevron.locked }"
+                                             points="-18,12 0,-14 18,12 11,12 0,-1 -11,12"/>
+                                </g>
+                            </t>
+                        </g>
+                    </svg>
+
+                    <!-- Symbole en grand au centre (apparait au lock, glisse vers sa case) -->
+                    <div class="o_sg_center_stage" t-if="state.centerGlyph">
+                        <div class="o_sg_center_shape" t-ref="center" t-out="state.centerGlyph.shape"/>
+                    </div>
+                  </div>
+
+                    <!-- Statut -->
+                    <div class="o_sg_status">
+                        <div class="o_sg_status_label" t-esc="state.status"/>
+                        <div class="o_sg_status_addr" t-esc="addressText"/>
+                    </div>
+                </div>
+
+                <!-- Slots de l'adresse -->
+                <div class="o_sg_slots">
+                    <div class="o_sg_panel_title">ADDRESS</div>
+                    <t t-foreach="slots" t-as="slot" t-key="slot.position">
+                        <div class="o_sg_slot" t-att-data-pos="slot.position"
+                             t-att-class="{ 'o_sg_slot_filled': slot.glyph,
+                                            'o_sg_slot_poo': slot.position === 7 }">
+                            <span class="o_sg_slot_index" t-esc="slot.position"/>
+                            <t t-if="slot.glyph">
+                                <div class="o_sg_slot_shape" t-out="slot.glyph.shape"/>
+                                <span class="o_sg_slot_num" t-esc="slot.glyph.number"/>
+                                <span class="o_sg_slot_name" t-esc="slot.glyph.name"/>
+                            </t>
+                            <t t-else="">
+                                <span class="o_sg_slot_empty">—</span>
+                            </t>
+                        </div>
+                    </t>
+                </div>
+
+            </div>
+        </div>
+    </t>
+
+</templates>

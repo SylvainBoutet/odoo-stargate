@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Known Milky Way gate addresses from Stargate SG-1, as 6 coordinate
+         glyphs (point of origin defaults to Earth). Source: rdanderson.com.
+         Unknown glyphs in an address are left blank. -->
+
+    <record id="planet_abydos" model="stargate.planet">
+        <field name="name">Abydos</field>
+        <field name="region">Milky Way</field>
+        <field name="glyph_1_id" ref="glyph_27"/>
+        <field name="glyph_2_id" ref="glyph_07"/>
+        <field name="glyph_3_id" ref="glyph_15"/>
+        <field name="glyph_4_id" ref="glyph_32"/>
+        <field name="glyph_5_id" ref="glyph_12"/>
+        <field name="glyph_6_id" ref="glyph_30"/>
+    </record>
+
+    <record id="planet_apophis_base" model="stargate.planet">
+        <field name="name">Apophis's Base</field>
+        <field name="glyph_1_id" ref="glyph_20"/>
+        <field name="glyph_2_id" ref="glyph_18"/>
+        <field name="glyph_3_id" ref="glyph_11"/>
+        <field name="glyph_4_id" ref="glyph_38"/>
+        <field name="glyph_5_id" ref="glyph_10"/>
+        <field name="glyph_6_id" ref="glyph_32"/>
+    </record>
+
+    <record id="planet_castiana_sahal" model="stargate.planet">
+        <field name="name">Castiana &amp; Sahal</field>
+        <field name="glyph_1_id" ref="glyph_29"/>
+        <field name="glyph_2_id" ref="glyph_03"/>
+        <field name="glyph_3_id" ref="glyph_06"/>
+        <field name="glyph_4_id" ref="glyph_09"/>
+        <field name="glyph_5_id" ref="glyph_12"/>
+        <field name="glyph_6_id" ref="glyph_16"/>
+    </record>
+
+    <record id="planet_castiana_sahal_alt" model="stargate.planet">
+        <field name="name">Castiana &amp; Sahal (alt.)</field>
+        <field name="glyph_1_id" ref="glyph_29"/>
+        <field name="glyph_2_id" ref="glyph_18"/>
+        <field name="glyph_3_id" ref="glyph_19"/>
+        <field name="glyph_4_id" ref="glyph_20"/>
+        <field name="glyph_5_id" ref="glyph_21"/>
+        <field name="glyph_6_id" ref="glyph_22"/>
+    </record>
+
+    <record id="planet_chulak" model="stargate.planet">
+        <field name="name">Chulak</field>
+        <field name="glyph_1_id" ref="glyph_09"/>
+        <field name="glyph_2_id" ref="glyph_02"/>
+        <field name="glyph_3_id" ref="glyph_23"/>
+        <field name="glyph_4_id" ref="glyph_15"/>
+        <field name="glyph_5_id" ref="glyph_37"/>
+        <field name="glyph_6_id" ref="glyph_20"/>
+    </record>
+
+    <record id="planet_clava_a" model="stargate.planet">
+        <field name="name">Clava Thessara Infinitas</field>
+        <field name="glyph_1_id" ref="glyph_14"/>
+        <field name="glyph_2_id" ref="glyph_21"/>
+        <field name="glyph_3_id" ref="glyph_16"/>
+        <field name="glyph_4_id" ref="glyph_11"/>
+        <field name="glyph_5_id" ref="glyph_30"/>
+        <field name="glyph_6_id" ref="glyph_07"/>
+    </record>
+
+    <record id="planet_clava_b" model="stargate.planet">
+        <field name="name">Clava Thessara Infinitas (alt.)</field>
+        <field name="glyph_1_id" ref="glyph_26"/>
+        <field name="glyph_2_id" ref="glyph_20"/>
+        <field name="glyph_3_id" ref="glyph_35"/>
+        <field name="glyph_4_id" ref="glyph_32"/>
+        <field name="glyph_5_id" ref="glyph_23"/>
+        <field name="glyph_6_id" ref="glyph_04"/>
+    </record>
+
+    <record id="planet_destroyers" model="stargate.planet">
+        <field name="name">Destroyers (Ha'tak)</field>
+        <field name="glyph_1_id" ref="glyph_03"/>
+        <field name="glyph_2_id" ref="glyph_32"/>
+        <field name="glyph_3_id" ref="glyph_16"/>
+        <field name="glyph_4_id" ref="glyph_08"/>
+        <field name="glyph_5_id" ref="glyph_10"/>
+        <field name="glyph_6_id" ref="glyph_12"/>
+    </record>
+
+    <record id="planet_earth" model="stargate.planet">
+        <field name="name">Earth (Tau'ri)</field>
+        <field name="designation">Giza</field>
+        <field name="glyph_1_id" ref="glyph_28"/>
+        <field name="glyph_2_id" ref="glyph_26"/>
+        <field name="glyph_3_id" ref="glyph_05"/>
+        <field name="glyph_4_id" ref="glyph_36"/>
+        <field name="glyph_5_id" ref="glyph_11"/>
+        <field name="glyph_6_id" ref="glyph_29"/>
+    </record>
+
+    <record id="planet_edora" model="stargate.planet">
+        <field name="name">Edora</field>
+        <field name="glyph_1_id" ref="glyph_28"/>
+        <field name="glyph_2_id" ref="glyph_38"/>
+        <field name="glyph_3_id" ref="glyph_35"/>
+        <field name="glyph_4_id" ref="glyph_09"/>
+        <field name="glyph_5_id" ref="glyph_15"/>
+        <field name="glyph_6_id" ref="glyph_03"/>
+    </record>
+
+    <record id="planet_euronda" model="stargate.planet">
+        <field name="name">Euronda</field>
+        <field name="glyph_1_id" ref="glyph_30"/>
+        <field name="glyph_2_id" ref="glyph_27"/>
+        <field name="glyph_3_id" ref="glyph_09"/>
+        <field name="glyph_4_id" ref="glyph_07"/>
+        <field name="glyph_5_id" ref="glyph_18"/>
+        <field name="glyph_6_id" ref="glyph_16"/>
+    </record>
+
+    <record id="planet_juna" model="stargate.planet">
+        <field name="name">Juna</field>
+        <field name="glyph_1_id" ref="glyph_29"/>
+        <field name="glyph_2_id" ref="glyph_08"/>
+        <field name="glyph_3_id" ref="glyph_18"/>
+        <field name="glyph_4_id" ref="glyph_22"/>
+        <field name="glyph_5_id" ref="glyph_04"/>
+        <field name="glyph_6_id" ref="glyph_25"/>
+    </record>
+
+    <record id="planet_kallana" model="stargate.planet">
+        <field name="name">Kallana</field>
+        <field name="glyph_1_id" ref="glyph_06"/>
+        <field name="glyph_2_id" ref="glyph_16"/>
+        <field name="glyph_3_id" ref="glyph_08"/>
+        <field name="glyph_4_id" ref="glyph_03"/>
+        <field name="glyph_5_id" ref="glyph_26"/>
+        <field name="glyph_6_id" ref="glyph_25"/>
+    </record>
+
+    <record id="planet_kheb" model="stargate.planet">
+        <field name="name">Kheb</field>
+        <field name="glyph_1_id" ref="glyph_26"/>
+        <field name="glyph_2_id" ref="glyph_35"/>
+        <field name="glyph_3_id" ref="glyph_06"/>
+        <field name="glyph_4_id" ref="glyph_08"/>
+        <field name="glyph_5_id" ref="glyph_23"/>
+        <field name="glyph_6_id" ref="glyph_14"/>
+    </record>
+
+    <record id="planet_ktau" model="stargate.planet">
+        <field name="name">K'Tau</field>
+        <field name="glyph_1_id" ref="glyph_18"/>
+        <field name="glyph_2_id" ref="glyph_02"/>
+        <field name="glyph_3_id" ref="glyph_30"/>
+        <field name="glyph_4_id" ref="glyph_12"/>
+        <field name="glyph_5_id" ref="glyph_26"/>
+        <field name="glyph_6_id" ref="glyph_33"/>
+    </record>
+
+    <record id="planet_land_of_light" model="stargate.planet">
+        <field name="name">Land of Light</field>
+        <field name="notes"><![CDATA[<p>Third glyph unknown in the reference.</p>]]></field>
+        <field name="glyph_1_id" ref="glyph_26"/>
+        <field name="glyph_2_id" ref="glyph_02"/>
+        <field name="glyph_4_id" ref="glyph_38"/>
+        <field name="glyph_5_id" ref="glyph_10"/>
+        <field name="glyph_6_id" ref="glyph_32"/>
+    </record>
+
+    <record id="planet_martin_lloyd" model="stargate.planet">
+        <field name="name">Martin Lloyd's Homeworld</field>
+        <field name="glyph_1_id" ref="glyph_24"/>
+        <field name="glyph_2_id" ref="glyph_12"/>
+        <field name="glyph_3_id" ref="glyph_32"/>
+        <field name="glyph_4_id" ref="glyph_07"/>
+        <field name="glyph_5_id" ref="glyph_11"/>
+        <field name="glyph_6_id" ref="glyph_34"/>
+    </record>
+
+    <record id="planet_nid_base" model="stargate.planet">
+        <field name="name">NID Off-world Base</field>
+        <field name="glyph_1_id" ref="glyph_38"/>
+        <field name="glyph_2_id" ref="glyph_28"/>
+        <field name="glyph_3_id" ref="glyph_15"/>
+        <field name="glyph_4_id" ref="glyph_35"/>
+        <field name="glyph_5_id" ref="glyph_03"/>
+        <field name="glyph_6_id" ref="glyph_19"/>
+    </record>
+
+    <record id="planet_othala" model="stargate.planet">
+        <field name="name">Othala (Asgard)</field>
+        <field name="notes"><![CDATA[<p>Eight-symbol address (extra-galactic).</p>]]></field>
+        <field name="glyph_1_id" ref="glyph_11"/>
+        <field name="glyph_2_id" ref="glyph_27"/>
+        <field name="glyph_3_id" ref="glyph_23"/>
+        <field name="glyph_4_id" ref="glyph_16"/>
+        <field name="glyph_5_id" ref="glyph_33"/>
+        <field name="glyph_6_id" ref="glyph_03"/>
+        <field name="glyph_7_id" ref="glyph_09"/>
+    </record>
+
+    <record id="planet_p2x_555" model="stargate.planet">
+        <field name="name">P2X-555</field>
+        <field name="designation">P2X-555</field>
+        <field name="glyph_1_id" ref="glyph_28"/>
+        <field name="glyph_2_id" ref="glyph_08"/>
+        <field name="glyph_3_id" ref="glyph_16"/>
+        <field name="glyph_4_id" ref="glyph_33"/>
+        <field name="glyph_5_id" ref="glyph_13"/>
+        <field name="glyph_6_id" ref="glyph_31"/>
+    </record>
+
+    <record id="planet_p34_353j" model="stargate.planet">
+        <field name="name">P34-353J</field>
+        <field name="designation">P34-353J</field>
+        <field name="glyph_1_id" ref="glyph_38"/>
+        <field name="glyph_2_id" ref="glyph_09"/>
+        <field name="glyph_3_id" ref="glyph_28"/>
+        <field name="glyph_4_id" ref="glyph_15"/>
+        <field name="glyph_5_id" ref="glyph_35"/>
+        <field name="glyph_6_id" ref="glyph_03"/>
+    </record>
+
+    <record id="planet_p3w_451" model="stargate.planet">
+        <field name="name">P3W-451</field>
+        <field name="designation">P3W-451</field>
+        <field name="notes"><![CDATA[<p>Black hole planet.</p>]]></field>
+        <field name="glyph_1_id" ref="glyph_19"/>
+        <field name="glyph_2_id" ref="glyph_08"/>
+        <field name="glyph_3_id" ref="glyph_04"/>
+        <field name="glyph_4_id" ref="glyph_37"/>
+        <field name="glyph_5_id" ref="glyph_26"/>
+        <field name="glyph_6_id" ref="glyph_16"/>
+    </record>
+
+    <record id="planet_p3x_116" model="stargate.planet">
+        <field name="name">P3X-116</field>
+        <field name="designation">P3X-116</field>
+        <field name="notes"><![CDATA[<p>Last two glyphs unknown in the reference.</p>]]></field>
+        <field name="glyph_1_id" ref="glyph_21"/>
+        <field name="glyph_2_id" ref="glyph_13"/>
+        <field name="glyph_3_id" ref="glyph_26"/>
+        <field name="glyph_4_id" ref="glyph_17"/>
+    </record>
+
+    <record id="planet_p3x_118" model="stargate.planet">
+        <field name="name">P3X-118</field>
+        <field name="designation">P3X-118</field>
+        <field name="glyph_1_id" ref="glyph_09"/>
+        <field name="glyph_2_id" ref="glyph_26"/>
+        <field name="glyph_3_id" ref="glyph_34"/>
+        <field name="glyph_4_id" ref="glyph_37"/>
+        <field name="glyph_5_id" ref="glyph_17"/>
+        <field name="glyph_6_id" ref="glyph_21"/>
+    </record>
+
+    <record id="planet_p3x_562" model="stargate.planet">
+        <field name="name">P3X-562</field>
+        <field name="designation">P3X-562</field>
+        <field name="glyph_1_id" ref="glyph_03"/>
+        <field name="glyph_2_id" ref="glyph_28"/>
+        <field name="glyph_3_id" ref="glyph_09"/>
+        <field name="glyph_4_id" ref="glyph_35"/>
+        <field name="glyph_5_id" ref="glyph_24"/>
+        <field name="glyph_6_id" ref="glyph_15"/>
+    </record>
+
+    <record id="planet_p3x_984" model="stargate.planet">
+        <field name="name">P3X-984</field>
+        <field name="designation">P3X-984</field>
+        <field name="notes"><![CDATA[<p>Sixth glyph unknown in the reference.</p>]]></field>
+        <field name="glyph_1_id" ref="glyph_29"/>
+        <field name="glyph_2_id" ref="glyph_05"/>
+        <field name="glyph_3_id" ref="glyph_36"/>
+        <field name="glyph_4_id" ref="glyph_06"/>
+        <field name="glyph_5_id" ref="glyph_23"/>
+    </record>
+
+    <record id="planet_p9c_372" model="stargate.planet">
+        <field name="name">P9C-372</field>
+        <field name="designation">P9C-372</field>
+        <field name="glyph_1_id" ref="glyph_25"/>
+        <field name="glyph_2_id" ref="glyph_08"/>
+        <field name="glyph_3_id" ref="glyph_18"/>
+        <field name="glyph_4_id" ref="glyph_29"/>
+        <field name="glyph_5_id" ref="glyph_04"/>
+        <field name="glyph_6_id" ref="glyph_22"/>
+    </record>
+
+    <record id="planet_pb5_926" model="stargate.planet">
+        <field name="name">PB5-926</field>
+        <field name="designation">PB5-926</field>
+        <field name="glyph_1_id" ref="glyph_12"/>
+        <field name="glyph_2_id" ref="glyph_36"/>
+        <field name="glyph_3_id" ref="glyph_23"/>
+        <field name="glyph_4_id" ref="glyph_18"/>
+        <field name="glyph_5_id" ref="glyph_07"/>
+        <field name="glyph_6_id" ref="glyph_27"/>
+    </record>
+
+    <record id="planet_camelot" model="stargate.planet">
+        <field name="name">Camelot</field>
+        <field name="designation">PX1-767</field>
+        <field name="glyph_1_id" ref="glyph_20"/>
+        <field name="glyph_2_id" ref="glyph_02"/>
+        <field name="glyph_3_id" ref="glyph_35"/>
+        <field name="glyph_4_id" ref="glyph_08"/>
+        <field name="glyph_5_id" ref="glyph_26"/>
+        <field name="glyph_6_id" ref="glyph_15"/>
+    </record>
+
+    <record id="planet_praclarush" model="stargate.planet">
+        <field name="name">Praclarush Taonas</field>
+        <field name="glyph_1_id" ref="glyph_35"/>
+        <field name="glyph_2_id" ref="glyph_03"/>
+        <field name="glyph_3_id" ref="glyph_31"/>
+        <field name="glyph_4_id" ref="glyph_29"/>
+        <field name="glyph_5_id" ref="glyph_05"/>
+        <field name="glyph_6_id" ref="glyph_17"/>
+    </record>
+
+    <record id="planet_sangreal" model="stargate.planet">
+        <field name="name">Sangreal Planet</field>
+        <field name="glyph_1_id" ref="glyph_30"/>
+        <field name="glyph_2_id" ref="glyph_19"/>
+        <field name="glyph_3_id" ref="glyph_34"/>
+        <field name="glyph_4_id" ref="glyph_09"/>
+        <field name="glyph_5_id" ref="glyph_33"/>
+        <field name="glyph_6_id" ref="glyph_18"/>
+    </record>
+
+    <record id="planet_tartarus" model="stargate.planet">
+        <field name="name">Tartarus</field>
+        <field name="glyph_1_id" ref="glyph_33"/>
+        <field name="glyph_2_id" ref="glyph_28"/>
+        <field name="glyph_3_id" ref="glyph_23"/>
+        <field name="glyph_4_id" ref="glyph_26"/>
+        <field name="glyph_5_id" ref="glyph_16"/>
+        <field name="glyph_6_id" ref="glyph_31"/>
+    </record>
+
+    <record id="planet_tollan" model="stargate.planet">
+        <field name="name">Tollan</field>
+        <field name="glyph_1_id" ref="glyph_06"/>
+        <field name="glyph_2_id" ref="glyph_33"/>
+        <field name="glyph_3_id" ref="glyph_27"/>
+        <field name="glyph_4_id" ref="glyph_37"/>
+        <field name="glyph_5_id" ref="glyph_11"/>
+        <field name="glyph_6_id" ref="glyph_18"/>
+    </record>
+
+    <record id="planet_tollana" model="stargate.planet">
+        <field name="name">Tollana</field>
+        <field name="glyph_1_id" ref="glyph_04"/>
+        <field name="glyph_2_id" ref="glyph_29"/>
+        <field name="glyph_3_id" ref="glyph_08"/>
+        <field name="glyph_4_id" ref="glyph_22"/>
+        <field name="glyph_5_id" ref="glyph_18"/>
+        <field name="glyph_6_id" ref="glyph_25"/>
+    </record>
+
+    <record id="planet_vagon_brei" model="stargate.planet">
+        <field name="name">Vagon Brei</field>
+        <field name="glyph_1_id" ref="glyph_03"/>
+        <field name="glyph_2_id" ref="glyph_08"/>
+        <field name="glyph_3_id" ref="glyph_02"/>
+        <field name="glyph_4_id" ref="glyph_12"/>
+        <field name="glyph_5_id" ref="glyph_19"/>
+        <field name="glyph_6_id" ref="glyph_30"/>
+    </record>
+
+    <record id="planet_unnamed" model="stargate.planet">
+        <field name="name">Unnamed Planet</field>
+        <field name="glyph_1_id" ref="glyph_09"/>
+        <field name="glyph_2_id" ref="glyph_18"/>
+        <field name="glyph_3_id" ref="glyph_27"/>
+        <field name="glyph_4_id" ref="glyph_15"/>
+        <field name="glyph_5_id" ref="glyph_21"/>
+        <field name="glyph_6_id" ref="glyph_36"/>
+    </record>
+</odoo>

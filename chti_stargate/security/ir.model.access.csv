@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stargate_glyph_user,stargate.glyph.user,model_stargate_glyph,base.group_user,1,1,1,1
+access_stargate_planet_user,stargate.planet.user,model_stargate_planet,base.group_user,1,1,1,1
+access_stargate_dial_log_user,stargate.dial.log.user,model_stargate_dial_log,base.group_user,1,1,1,1

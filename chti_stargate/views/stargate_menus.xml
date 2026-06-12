@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- App 1 — immersive Dialing Computer (the "fun" face) -->
+    <menuitem id="menu_stargate_root" name="Stargate" sequence="50"
+              web_icon="chti_stargate,static/description/icon.png"/>
+
+    <menuitem id="menu_stargate_dialing_computer" name="Dialing Computer"
+              parent="menu_stargate_root"
+              action="action_dialing_computer" sequence="5"/>
+
+    <!-- App 2 — standard data management: the tables (destinations, glyphs, log) -->
+    <menuitem id="menu_stargate_data_root" name="Coordinates" sequence="51"
+              web_icon="chti_stargate,static/description/icon_data.png"/>
+
+    <menuitem id="menu_stargate_planet" name="Destinations"
+              parent="menu_stargate_data_root"
+              action="action_stargate_planet" sequence="10"/>
+
+    <menuitem id="menu_stargate_dial_log" name="Dial Log"
+              parent="menu_stargate_data_root"
+              action="action_stargate_dial_log" sequence="20"/>
+
+    <menuitem id="menu_stargate_config" name="Configuration"
+              parent="menu_stargate_data_root" sequence="90"/>
+
+    <menuitem id="menu_stargate_glyph" name="Glyphs"
+              parent="menu_stargate_config"
+              action="action_stargate_glyph" sequence="10"/>
+</odoo>
