@@ -12,6 +12,10 @@
                         ⟵ Odoo
                     </button>
                     <span class="o_sg_brand">STARGATE · DIALING COMPUTER</span>
+                    <button class="o_sg_btn o_sg_btn_chti" t-on-click="toggleAbout"
+                            title="À propos · CHTI-TECH">
+                        CHTI-TECH
+                    </button>
                 </div>
                 <div class="o_sg_controls">
                     <select class="o_sg_select" t-on-change="loadPlanet">
@@ -139,6 +143,11 @@
                             </t>
                         </g>
                     </svg>
+
+                    <!-- Symbole verrouillé en grand au centre, glisse ensuite dans sa case -->
+                    <div class="o_sg_center_stage" t-if="state.centerGlyph">
+                        <div class="o_sg_center_shape" t-ref="center" t-out="state.centerGlyph.shape"/>
+                    </div>
                   </div>
 
                     <!-- Statut -->
@@ -158,8 +167,6 @@
                             <span class="o_sg_slot_index" t-esc="slot.position"/>
                             <t t-if="slot.glyph">
                                 <div class="o_sg_slot_shape" t-out="slot.glyph.shape"/>
-                                <span class="o_sg_slot_num" t-esc="slot.glyph.number"/>
-                                <span class="o_sg_slot_name" t-esc="slot.glyph.name"/>
                             </t>
                             <t t-else="">
                                 <span class="o_sg_slot_empty">—</span>
@@ -169,6 +176,28 @@
                 </div>
 
             </div>
+
+            <!-- Vitrine CHTI-TECH (backend + frontend) -->
+            <div t-if="state.showAbout" class="o_sg_about" t-on-click="toggleAbout">
+                <div class="o_sg_about_card" t-on-click.stop="() => {}">
+                    <button class="o_sg_about_close" t-on-click="toggleAbout" title="Close">✕</button>
+                    <div class="o_sg_about_brand">CHTI-TECH</div>
+                    <p class="o_sg_about_text">
+                        Conseil et développement <strong>Odoo</strong> : modules métier,
+                        intégrations, IoT et applications sur mesure.
+                        Valenciennes, Hauts-de-France.
+                    </p>
+                    <p class="o_sg_about_text o_sg_about_muted">
+                        Ce simulateur de numérotation Stargate est une démo technique
+                        (Odoo 19 · OWL · Web Audio).
+                    </p>
+                    <a class="o_sg_about_link" href="https://chti-tech.eu"
+                       target="_blank" rel="noopener noreferrer">
+                        Visiter chti-tech.eu →
+                    </a>
+                </div>
+            </div>
+
         </div>
     </t>
 

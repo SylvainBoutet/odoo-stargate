@@ -36,6 +36,7 @@ export class DialingComputer extends Component {
         this.orm = useService("orm");
         this.notification = useService("notification");
         this.rootRef = useRef("root");
+        this.centerRef = useRef("center");
         this.audio = new StargateAudio();
         onWillUnmount(() => this.audio.dispose());
 
@@ -48,11 +49,13 @@ export class DialingComputer extends Component {
             ringAngle: 0,          // rotation courante de l'anneau des symboles (deg, cumulé)
             ringDuration: 0,       // durée de la rotation en cours (s) — vitesse angulaire constante
             topLocking: false,     // le chevron du haut plonge pour verrouiller
+            centerGlyph: false,    // glyphe verrouillé affiché en grand au centre
             status: "IDLE",        // IDLE | DIALING | ENGAGED
             selectedPlanetId: false,
             dialing: false,
             kawoosh: false,        // éruption instable du vortex (transitoire)
             muted: false,          // coupe le son
+            showAbout: false,      // encart vitrine CHTI-TECH
         });
 
         onWillStart(async () => {
@@ -179,6 +182,10 @@ export class DialingComputer extends Component {
         this.audio.setMuted(this.state.muted);
     }
 
+    toggleAbout() {
+        this.state.showAbout = !this.state.showAbout;
+    }
+
     addGlyph(glyph) {
         if (this.state.dialing || this.state.status === "ENGAGED") {
             return;
@@ -213,6 +220,7 @@ export class DialingComputer extends Component {
         this.state.revealedCount = 0;
         this.state.ringAngle = 0;
         this.state.topLocking = false;
+        this.state.centerGlyph = false;
         this.state.status = "IDLE";
         this.state.selectedPlanetId = false;
         this.audio.stopAmbient();
@@ -227,6 +235,7 @@ export class DialingComputer extends Component {
         this.state.revealedCount = 0;
         this.state.ringAngle = 0;
         this.state.topLocking = false;
+        this.state.centerGlyph = false;
         this.state.status = "IDLE";
         this.audio.stopAmbient();
         if (!planetId) {
@@ -268,6 +277,7 @@ export class DialingComputer extends Component {
         this.state.litChevrons = [];
         this.state.revealedCount = 0;
         this.state.topLocking = false;
+        this.state.centerGlyph = false;
         const seq = this.state.sequence;
         await this._sleep(400);
 
@@ -277,13 +287,18 @@ export class DialingComputer extends Component {
             await this._sleep(200);
             // 2. le chevron du haut plonge et verrouille le symbole
             await this._lockTopChevron();
-            // 3. la case se remplit et le chevron de la séquence s'illumine
-            this.state.revealedCount = i + 1;
+            // 3. le chevron de la séquence s'illumine
             this.state.litChevrons = [
                 ...this.state.litChevrons,
                 CHEVRON_LIGHT_ORDER[i % CHEVRON_LIGHT_ORDER.length],
             ];
-            await this._sleep(350);
+            // 4. le symbole apparaît en grand au centre, puis glisse dans sa case
+            this.state.centerGlyph = seq[i];
+            await this._sleep(600);
+            await this._flyToSlot(i + 1);
+            this.state.revealedCount = i + 1;
+            this.state.centerGlyph = false;
+            await this._sleep(200);
         }
 
         await this._sleep(500);
@@ -341,6 +356,26 @@ export class DialingComputer extends Component {
         await this._sleep(450);
         this.state.topLocking = false;
         await this._sleep(120);
+    }
+
+    /** Anime le glyphe central vers la case n° i (translation + réduction). */
+    async _flyToSlot(i) {
+        const root = this.rootRef.el;
+        const shape = this.centerRef.el;
+        const target = root && root.querySelector(`.o_sg_slot[data-pos="${i}"]`);
+        if (!shape || !target) {
+            await this._sleep(400);
+            return;
+        }
+        const c = shape.getBoundingClientRect();
+        const t = target.getBoundingClientRect();
+        const dx = t.left + t.width / 2 - (c.left + c.width / 2);
+        const dy = t.top + t.height / 2 - (c.top + c.height / 2);
+        const scale = Math.max(0.18, Math.min(0.45, t.height / c.height));
+        shape.style.transition = "transform 0.55s ease-in, opacity 0.55s ease-in";
+        shape.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
+        shape.style.opacity = "0.15";
+        await this._sleep(560);
     }
 
     _sleep(ms) {
