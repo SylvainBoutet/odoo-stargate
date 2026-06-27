@@ -20,7 +20,7 @@ Backend management first; an immersive OWL "Dialing Computer" interface
     'author': "CHTI-TECH",
     'website': "https://chti-tech.fr",
     'license': 'LGPL-3',
-    'depends': ['base', 'mail'],
+    'depends': ['base', 'mail', 'web'],
     'data': [
         'security/ir.model.access.csv',
         'data/stargate_glyph_data.xml',
@@ -29,13 +29,24 @@ Backend management first; an immersive OWL "Dialing Computer" interface
         'views/stargate_glyph_views.xml',
         'views/stargate_planet_views.xml',
         'views/stargate_dial_log_views.xml',
+        'views/stargate_team_views.xml',
+        'views/stargate_mission_views.xml',
         'views/stargate_dialing_computer.xml',
+        'views/stargate_public_templates.xml',
         'views/stargate_menus.xml',
     ],
     'assets': {
         'web.assets_backend': [
             'chti_stargate/static/src/dialing_computer/dialing_computer.scss',
+            'chti_stargate/static/src/dialing_computer/sound_engine.js',
             'chti_stargate/static/src/dialing_computer/dialing_computer.js',
+            'chti_stargate/static/src/dialing_computer/dialing_computer.xml',
+        ],
+        'web.assets_frontend': [
+            'chti_stargate/static/src/dialing_computer/dialing_computer.scss',
+            'chti_stargate/static/src/dialing_computer/sound_engine.js',
+            'chti_stargate/static/src/dialing_computer/dialing_computer.js',
+            'chti_stargate/static/src/dialing_computer/dialing_computer_public.js',
             'chti_stargate/static/src/dialing_computer/dialing_computer.xml',
         ],
     },

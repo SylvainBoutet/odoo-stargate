@@ -60,6 +60,9 @@ class StargatePlanet(models.Model):
     dial_count = fields.Integer(string="Dials", compute='_compute_dial_count')
     last_dial = fields.Datetime(string="Last Dialed", compute='_compute_dial_count')
 
+    mission_ids = fields.One2many('stargate.mission', 'planet_id', string="Missions")
+    mission_count = fields.Integer(string="Missions", compute='_compute_mission_count')
+
     def _default_point_of_origin(self):
         # Earth's point of origin (glyph 01). Safe before data is loaded.
         return self.env.ref('chti_stargate.glyph_01', raise_if_not_found=False)
@@ -99,6 +102,11 @@ class StargatePlanet(models.Model):
             planet.dial_count = len(logs)
             planet.last_dial = max(logs.mapped('dial_date')) if logs else False
 
+    @api.depends('mission_ids')
+    def _compute_mission_count(self):
+        for planet in self:
+            planet.mission_count = len(planet.mission_ids)
+
     def action_dial(self):
         """Compose l'adresse : journalise la connexion (et, plus tard, pilote la maquette ESP32)."""
         self.ensure_one()
@@ -127,6 +135,17 @@ class StargatePlanet(models.Model):
             'name': _("Dial Log — %s", self.name),
             'res_model': 'stargate.dial.log',
             'view_mode': 'list,form',
+            'domain': [('planet_id', '=', self.id)],
+            'context': {'default_planet_id': self.id},
+        }
+
+    def action_view_missions(self):
+        self.ensure_one()
+        return {
+            'type': 'ir.actions.act_window',
+            'name': _("Missions — %s", self.name),
+            'res_model': 'stargate.mission',
+            'view_mode': 'list,form,kanban',
             'domain': [('planet_id', '=', self.id)],
             'context': {'default_planet_id': self.id},
         }

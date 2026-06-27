@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Public, login-free page hosting the immersive dialing computer (full screen). -->
+    <template id="dialing_public_page" name="Stargate Dialing Computer">
+        <t t-call="web.frontend_layout">
+            <t t-set="html_data" t-value="{'class': 'o_stargate_public_html'}"/>
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+            <div class="o_stargate_public">
+                <owl-component name="chti_stargate.DialingComputerPublic"/>
+            </div>
+        </t>
+    </template>
+</odoo>

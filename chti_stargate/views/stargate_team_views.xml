@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_stargate_team_list" model="ir.ui.view">
+        <field name="name">stargate.team.list</field>
+        <field name="model">stargate.team</field>
+        <field name="arch" type="xml">
+            <list string="SGC Teams">
+                <field name="name"/>
+                <field name="specialty"/>
+                <field name="leader_id"/>
+                <field name="member_count"/>
+                <field name="mission_count"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_stargate_team_kanban" model="ir.ui.view">
+        <field name="name">stargate.team.kanban</field>
+        <field name="model">stargate.team</field>
+        <field name="arch" type="xml">
+            <kanban highlight_color="color">
+                <templates>
+                    <t t-name="card">
+                        <div class="o_kanban_record_top">
+                            <div class="o_kanban_record_headings">
+                                <strong class="o_kanban_record_title">
+                                    <field name="name"/>
+                                </strong>
+                                <small class="o_kanban_record_subtitle text-muted">
+                                    <field name="specialty"/>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="o_kanban_record_body">
+                            <field name="leader_id"/>
+                        </div>
+                        <div class="o_kanban_record_bottom">
+                            <span class="badge text-bg-secondary">
+                                <field name="member_count"/> members
+                            </span>
+                            <span class="badge text-bg-info">
+                                <field name="mission_count"/> missions
+                            </span>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_stargate_team_form" model="ir.ui.view">
+        <field name="name">stargate.team.form</field>
+        <field name="model">stargate.team</field>
+        <field name="arch" type="xml">
+            <form string="SGC Team">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_missions" type="object"
+                                class="oe_stat_button" icon="fa-flag">
+                            <field name="mission_count" widget="statinfo" string="Missions"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="SG-1"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="specialty"/>
+                            <field name="leader_id"/>
+                            <field name="idc_code"/>
+                        </group>
+                        <group>
+                            <field name="active" invisible="1"/> <!-- Needed for archive toggle in form -->
+                            <field name="color" widget="color_picker"/>
+                        </group>
+                    </group>
+                    <group string="Members">
+                        <field name="member_ids" widget="many2many_tags" nolabel="1"/>
+                    </group>
+                    <notebook>
+                        <page string="Notes" name="notes">
+                            <field name="notes"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_stargate_team" model="ir.actions.act_window">
+        <field name="name">Teams</field>
+        <field name="res_model">stargate.team</field>
+        <field name="view_mode">list,kanban,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create an SGC team</p>
+            <p>Field teams (SG-1, SG-3, ...) sent off-world on missions.</p>
+        </field>
+    </record>
+</odoo>

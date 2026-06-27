@@ -26,4 +26,16 @@
     <menuitem id="menu_stargate_glyph" name="Glyphs"
               parent="menu_stargate_config"
               action="action_stargate_glyph" sequence="10"/>
+
+    <!-- App 3 — SGC operations: teams and off-world mission reports -->
+    <menuitem id="menu_stargate_ops_root" name="SGC Operations" sequence="52"
+              web_icon="chti_stargate,static/description/icon_data.png"/>
+
+    <menuitem id="menu_stargate_mission" name="Missions"
+              parent="menu_stargate_ops_root"
+              action="action_stargate_mission" sequence="10"/>
+
+    <menuitem id="menu_stargate_team" name="Teams"
+              parent="menu_stargate_ops_root"
+              action="action_stargate_team" sequence="20"/>
 </odoo>

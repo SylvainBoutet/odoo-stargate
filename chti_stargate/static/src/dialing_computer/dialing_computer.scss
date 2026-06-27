@@ -189,32 +189,6 @@ $sg-amber: #ff8a1e;
             max-height: 70vh;
         }
 
-        // Symbole en grand au centre pendant la composition
-        .o_sg_center_stage {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            pointer-events: none;
-            z-index: 5;
-        }
-
-        .o_sg_center_shape {
-            width: 210px;
-            height: 210px;
-            color: $sg-red;
-            filter: drop-shadow(0 0 18px rgba($sg-red, 0.85));
-            animation: o_sg_center_in 0.4s ease-out;
-            will-change: transform, opacity;
-
-            svg {
-                width: 100%;
-                height: 100%;
-                display: block;
-            }
-        }
-
         .o_sg_ring_outer,
         .o_sg_ring_track,
         .o_sg_ring_inner {
@@ -237,9 +211,30 @@ $sg-amber: #ff8a1e;
             stroke-width: 1.5;
         }
 
+        // Anneau des symboles : tourne autour du centre du gabarit SVG.
+        // La transition (durée + timing linéaire) est posée en inline pour une vitesse constante.
+        .o_sg_inner_ring {
+            transform-box: view-box;
+            transform-origin: center;
+        }
+
         .o_sg_tick {
             stroke: $sg-cyan-dim;
             stroke-width: 2;
+        }
+
+        // Glyphes gravés sur l'anneau (svg currentColor injecté en foreignObject)
+        .o_sg_ring_glyph {
+            width: 30px;
+            height: 30px;
+            color: rgba($sg-cyan, 0.85);
+            transition: color 0.3s ease, filter 0.3s ease;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
         }
 
         .o_sg_chevron {
@@ -247,23 +242,62 @@ $sg-amber: #ff8a1e;
             stroke: $sg-cyan-dim;
             stroke-width: 1.5;
             transition: all 0.2s ease;
+            transform-box: fill-box;
+            transform-origin: center;
 
             &.o_sg_chevron_locked {
                 fill: $sg-red;
                 stroke: lighten($sg-red, 15%);
                 filter: drop-shadow(0 0 8px rgba($sg-red, 0.9));
             }
+
+            // Le chevron du haut : accent ambre, et plonge vers le centre au verrouillage
+            &.o_sg_chevron_top {
+                stroke: $sg-amber;
+            }
+
+            &.o_sg_chevron_dip {
+                animation: o_sg_chevron_dip 0.45s ease-in-out;
+            }
+        }
+
+        // --- Vortex / event horizon ---
+        .o_sg_horizon_group {
+            transition: opacity 0.7s ease;
+            transform-box: fill-box;
+            transform-origin: center;
         }
 
         .o_sg_horizon {
-            fill: radial-gradient($sg-cyan, #0a3a6a);
-            fill: #1c7fd6;
-            transition: opacity 0.6s ease;
+            // dégradé SVG + filtre d'eau (déplacement turbulent) appliqués via attributs SVG
+            animation: o_sg_breathe 7s ease-in-out infinite;
+            transform-box: fill-box;
+            transform-origin: center;
         }
 
-        .o_sg_horizon_core {
-            fill: #aee9ff;
-            transition: opacity 0.6s ease;
+        // Reflet lumineux par-dessus la surface, pulsant doucement
+        .o_sg_horizon_sheen {
+            fill: rgba(174, 233, 255, 0.18);
+            mix-blend-mode: screen;
+            animation: o_sg_sheen 5s ease-in-out infinite;
+        }
+
+        // Ondes concentriques qui s'éloignent du centre
+        .o_sg_ripple {
+            stroke: rgba(174, 233, 255, 0.7);
+            stroke-width: 2;
+        }
+
+        // Éruption du kawoosh
+        .o_sg_kawoosh {
+            opacity: 0;
+            transform-box: fill-box;
+            transform-origin: center;
+            filter: drop-shadow(0 0 30px rgba(120, 220, 255, 0.9));
+
+            &.o_sg_kawoosh_play {
+                animation: o_sg_kawoosh 1.5s cubic-bezier(0.16, 0.9, 0.3, 1) forwards;
+            }
         }
 
         .o_sg_status {
@@ -368,9 +402,29 @@ $sg-amber: #ff8a1e;
     50% { opacity: 0.55; }
 }
 
-// Apparition du symbole en grand au centre (avant qu'il glisse dans sa case)
-@keyframes o_sg_center_in {
-    0% { opacity: 0; transform: scale(0.35); }
-    60% { opacity: 1; transform: scale(1.12); }
-    100% { opacity: 1; transform: scale(1); }
+// Le chevron du haut plonge vers le centre puis remonte pour verrouiller le symbole
+@keyframes o_sg_chevron_dip {
+    0%, 100% { transform: translateY(0); }
+    45%      { transform: translateY(10px); }
+}
+
+// Kawoosh : jaillissement violent vers l'extérieur puis rétractation en flaque
+@keyframes o_sg_kawoosh {
+    0%   { opacity: 0;    transform: scale(0.15); }
+    14%  { opacity: 1;    transform: scale(1.7); }   // l'éruption dépasse l'anneau
+    34%  { opacity: 0.95; transform: scale(1.35); }
+    55%  { opacity: 1;    transform: scale(0.92); }  // léger rebond
+    100% { opacity: 1;    transform: scale(1); }     // se stabilise en event horizon
+}
+
+// Respiration lente de la surface du vortex
+@keyframes o_sg_breathe {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.025); }
+}
+
+// Pulsation du reflet de surface
+@keyframes o_sg_sheen {
+    0%, 100% { opacity: 0.5; }
+    50%      { opacity: 1; }
 }
