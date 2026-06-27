@@ -6,15 +6,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-11 21:09+0000\n"
-"PO-Revision-Date: 2026-06-11 21:09+0000\n"
+"POT-Creation-Date: 2026-06-27 20:09+0000\n"
+"PO-Revision-Date: 2026-06-27 20:09+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: \n"
+
+#. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid ""
+": modules métier,\n"
+"                        intégrations, IoT et applications sur mesure.\n"
+"                        Valenciennes, Hauts-de-France."
+msgstr ""
+": modules métier,\n"
+"                        intégrations, IoT et applications sur mesure.\n"
+"                        Valenciennes, Hauts-de-France."
 
 #. module: chti_stargate
 #: model:ir.model.constraint,message:chti_stargate.constraint_stargate_glyph_number_gate_type_uniq
@@ -28,33 +40,45 @@ msgid "ADDRESS"
 msgstr "ADRESSE"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_needaction
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_needaction
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_needaction
 msgid "Action Needed"
 msgstr "Action requise"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__active
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__active
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__active
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__active
 msgid "Active"
 msgstr "Actif"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_ids
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_ids
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_ids
 msgid "Activities"
 msgstr "Activités"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_exception_decoration
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_exception_decoration
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_exception_decoration
 msgid "Activity Exception Decoration"
 msgstr "Décoration d'exception d'activité"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_state
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_state
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_state
 msgid "Activity State"
 msgstr "État de l'activité"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_type_icon
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_type_icon
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_type_icon
 msgid "Activity Type Icon"
 msgstr "Icône du type d'activité"
 
@@ -65,6 +89,7 @@ msgstr "Ajouter une destination Stargate"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__address_display
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__address_display
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__address_display
 msgid "Address"
 msgstr "Adresse"
@@ -80,7 +105,26 @@ msgid "Address — Coordinate Glyphs"
 msgstr "Adresse — Glyphes de coordonnées"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "After-action report..."
+msgstr "Compte-rendu de fin de mission..."
+
+#. module: chti_stargate
+#: model_terms:ir.actions.act_window,help:chti_stargate.action_stargate_mission
+msgid ""
+"Assign a team to a destination, set the objective and record the after-"
+"action report."
+msgstr "Affectez une équipe à une destination, définissez l'objectif et consignez le compte-rendu de mission."
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__team_id
+msgid "Assigned Team"
+msgstr "Équipe affectée"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_attachment_count
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_attachment_count
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_attachment_count
 msgid "Attachment Count"
 msgstr "Nombre de pièces jointes"
 
@@ -91,15 +135,54 @@ msgid "Back to Odoo"
 msgstr "Retour à Odoo"
 
 #. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid "CHTI-TECH"
+msgstr ""
+
+#. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid ""
+"Ce simulateur de numérotation Stargate est une démo technique\n"
+"                        (Odoo 19 · OWL · Web Audio)."
+msgstr ""
+"Ce simulateur de numérotation Stargate est une démo technique\n"
+"                        (Odoo 19 · OWL · Web Audio)."
+
+#. module: chti_stargate
 #. odoo-python
 #: code:addons/chti_stargate/models/stargate_planet.py:0
 msgid "Chevron locked. Wormhole established to %s."
 msgstr "Chevron enclenché. Vortex établi vers %s."
 
 #. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid "Close"
+msgstr "Fermer"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__color
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__color
+msgid "Color"
+msgstr "Couleur"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_team__specialty__combat
+msgid "Combat"
+msgstr "Combat"
+
+#. module: chti_stargate
 #: model:ir.ui.menu,name:chti_stargate.menu_stargate_config
 msgid "Configuration"
 msgstr "Configuration"
+
+#. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid "Conseil et développement"
+msgstr "Conseil et développement"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__name
@@ -114,6 +197,7 @@ msgstr "Contient le glyphe"
 
 #. module: chti_stargate
 #: model:ir.model.fields,help:chti_stargate.field_stargate_dial_log__address_display
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__address_display
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__address_display
 msgid "Coordinate glyphs, then the point of origin."
 msgstr "Glyphes de coordonnées, puis le point d'origine."
@@ -124,16 +208,25 @@ msgid "Coordinates"
 msgstr "Coordonnées"
 
 #. module: chti_stargate
+#: model_terms:ir.actions.act_window,help:chti_stargate.action_stargate_team
+msgid "Create an SGC team"
+msgstr "Créer une équipe SGC"
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__create_uid
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__create_uid
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__create_uid
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__create_uid
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__create_uid
 msgid "Created by"
 msgstr "Créé par"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__create_date
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__create_date
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__create_date
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__create_date
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__create_date
 msgid "Created on"
 msgstr "Créé le"
 
@@ -144,7 +237,24 @@ msgid "DIAL"
 msgstr "COMPOSER"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Declare MIA"
+msgstr "Déclarer disparu"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Depart"
+msgstr "Départ"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__date_start
+msgid "Departure"
+msgstr "Départ"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__designation
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__designation
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__name
 msgid "Designation"
 msgstr "Désignation"
 
@@ -155,7 +265,9 @@ msgstr "Désignation / Nom"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__planet_id
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__planet_id
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_dial_log_search
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_form
 msgid "Destination"
 msgstr "Destination"
@@ -234,11 +346,23 @@ msgid "Dials"
 msgstr "Compositions"
 
 #. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_team__specialty__diplomatic
+msgid "Diplomatic"
+msgstr "Diplomatique"
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__display_name
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__display_name
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__display_name
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__display_name
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__state__draft
+msgid "Draft"
+msgstr "Brouillon"
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_search
@@ -246,24 +370,51 @@ msgid "Extra-galactic (8 symbols)"
 msgstr "Extra-galactique (8 symboles)"
 
 #. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__threat_level__extreme
+msgid "Extreme"
+msgstr "Extrême"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__state__failed
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_dial_log_search
 msgid "Failed"
 msgstr "Échec"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+msgid "Failed / MIA"
+msgstr "Échec / Disparu"
+
+#. module: chti_stargate
+#: model_terms:ir.actions.act_window,help:chti_stargate.action_stargate_team
+msgid "Field teams (SG-1, SG-3, ...) sent off-world on missions."
+msgstr "Équipes de terrain (SG-1, SG-3, …) envoyées en mission hors-monde."
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_follower_ids
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_follower_ids
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_follower_ids
 msgid "Followers"
 msgstr "Abonnés"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_partner_ids
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_partner_ids
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_partner_ids
 msgid "Followers (Partners)"
 msgstr "Abonnés (Partenaires)"
 
 #. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__activity_type_icon
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__activity_type_icon
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
 msgstr "Icône Font Awesome, par ex. fa-tasks"
+
+#. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__idc_code
+msgid "GDO identification code to clear the iris."
+msgstr "Code d'identification GDO pour ouvrir l'iris."
 
 #. module: chti_stargate
 #. odoo-javascript
@@ -339,7 +490,9 @@ msgstr "Le numéro de glyphe doit être un entier positif."
 #. module: chti_stargate
 #: model:ir.model.fields,help:chti_stargate.field_stargate_glyph__is_point_of_origin
 msgid "Glyph used as the seventh symbol when dialing from this gate's world."
-msgstr "Glyphe utilisé comme septième symbole lors d'une composition depuis le monde de cette porte."
+msgstr ""
+"Glyphe utilisé comme septième symbole lors d'une composition depuis le monde"
+" de cette porte."
 
 #. module: chti_stargate
 #: model:ir.actions.act_window,name:chti_stargate.action_stargate_glyph
@@ -350,34 +503,56 @@ msgid "Glyphs"
 msgstr "Glyphes"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__has_message
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__has_message
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__has_message
 msgid "Has Message"
 msgstr "A un message"
 
 #. module: chti_stargate
-#: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__id
-#: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__id
-#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__id
-msgid "ID"
-msgstr "ID"
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__threat_level__high
+msgid "High"
+msgstr "Élevé"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__id
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__id
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__id
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__id
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__id
+msgid "ID"
+msgstr ""
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__idc_code
+msgid "IDC Code"
+msgstr "Code IDC"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_exception_icon
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_exception_icon
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_exception_icon
 msgid "Icon"
 msgstr "Icône"
 
 #. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__activity_exception_icon
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__activity_exception_icon
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__activity_exception_icon
 msgid "Icon to indicate an exception activity."
 msgstr "Icône indiquant une activité d'exception."
 
 #. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__message_needaction
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__message_needaction
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__message_needaction
 msgid "If checked, new messages require your attention."
 msgstr "Si coché, de nouveaux messages requièrent votre attention."
 
 #. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__message_has_error
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__message_has_error
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si coché, certains messages ont une erreur de livraison."
 
@@ -387,7 +562,14 @@ msgid "Image"
 msgstr "Image"
 
 #. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__state__in_progress
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_is_follower
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_is_follower
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_is_follower
 msgid "Is Follower"
 msgstr "Est abonné"
 
@@ -404,26 +586,66 @@ msgstr "Dernière composition"
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__write_uid
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__write_uid
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__write_uid
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__write_uid
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__write_uid
 msgid "Last Updated by"
 msgstr "Mis à jour par"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__write_date
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__write_date
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__write_date
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__write_date
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__write_date
 msgid "Last Updated on"
 msgstr "Mis à jour le"
 
 #. module: chti_stargate
+#: model_terms:ir.actions.act_window,help:chti_stargate.action_stargate_mission
+msgid "Log an off-world mission"
+msgstr "Consigner une mission hors-monde"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__threat_level__low
+msgid "Low"
+msgstr "Faible"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__malp_recon
+msgid "MALP Recon Done"
+msgstr "Reconnaissance MALP effectuée"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__state__mia
+msgid "MIA"
+msgstr "Disparu"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_team__specialty__medical
+msgid "Medical"
+msgstr "Médical"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__member_count
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__member_ids
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_form
+msgid "Members"
+msgstr "Membres"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_has_error
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_has_error
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_has_error
 msgid "Message Delivery error"
 msgstr "Erreur de livraison du message"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_ids
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_ids
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_ids
 msgid "Messages"
-msgstr "Messages"
+msgstr ""
 
 #. module: chti_stargate
 #: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_glyph__gate_type__milky_way
@@ -433,7 +655,71 @@ msgid "Milky Way"
 msgstr "Voie lactée"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__name
+msgid "Mission"
+msgstr "Mission"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__leader_id
+msgid "Mission Commander"
+msgstr "Commandant de mission"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Mission Failed"
+msgstr "Mission échouée"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__report
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Mission Report"
+msgstr "Compte-rendu de mission"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Mission Success"
+msgstr "Mission réussie"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Mission objective..."
+msgstr "Objectif de la mission..."
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Mission title"
+msgstr "Titre de la mission"
+
+#. module: chti_stargate
+#: model:ir.actions.act_window,name:chti_stargate.action_stargate_mission
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__mission_count
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__mission_ids
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__mission_count
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__mission_ids
+#: model:ir.ui.menu,name:chti_stargate.menu_stargate_mission
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_list
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_form
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_form
+msgid "Missions"
+msgstr "Missions"
+
+#. module: chti_stargate
+#. odoo-python
+#: code:addons/chti_stargate/models/stargate_planet.py:0
+#: code:addons/chti_stargate/models/stargate_team.py:0
+msgid "Missions — %s"
+msgstr "Missions — %s"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__threat_level__moderate
+msgid "Moderate"
+msgstr "Modéré"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__my_activity_date_deadline
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__my_activity_date_deadline
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__my_activity_date_deadline
 msgid "My Activity Deadline"
 msgstr "Échéance de mon activité"
 
@@ -453,19 +739,30 @@ msgid "Never Dialed"
 msgstr "Jamais composé"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_date_deadline
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_date_deadline
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_date_deadline
 msgid "Next Activity Deadline"
 msgstr "Échéance de l'activité suivante"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_summary
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_summary
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_summary
 msgid "Next Activity Summary"
 msgstr "Résumé de l'activité suivante"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_type_id
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_type_id
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_type_id
 msgid "Next Activity Type"
 msgstr "Type de l'activité suivante"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__threat_level__none
+msgid "None"
+msgstr "Aucun"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__note
@@ -479,29 +776,56 @@ msgstr "Note..."
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__notes
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__notes
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_form
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_form
 msgid "Notes"
 msgstr "Notes"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_needaction_counter
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_needaction_counter
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Nombre d'actions"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_has_error_counter
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_has_error_counter
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_has_error_counter
 msgid "Number of errors"
 msgstr "Nombre d'erreurs"
 
 #. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__message_needaction_counter
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__message_needaction_counter
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__message_needaction_counter
 msgid "Number of messages requiring action"
 msgstr "Nombre de messages nécessitant une action"
 
 #. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__message_has_error_counter
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__message_has_error_counter
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__message_has_error_counter
 msgid "Number of messages with delivery error"
 msgstr "Nombre de messages avec une erreur de livraison"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__objective
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Objective"
+msgstr "Objectif"
+
+#. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid "Odoo"
+msgstr ""
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+msgid "Ongoing"
+msgstr "En cours"
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_glyph_form
@@ -511,7 +835,7 @@ msgstr "Balisage SVG en ligne optionnel pour l'interface de numérotation."
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_form
 msgid "P3X-000"
-msgstr "P3X-000"
+msgstr ""
 
 #. module: chti_stargate
 #: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_glyph__gate_type__pegasus
@@ -535,11 +859,18 @@ msgid "RESET"
 msgstr "RÉINIT."
 
 #. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_team__specialty__recon
+msgid "Reconnaissance"
+msgstr "Reconnaissance"
+
+#. module: chti_stargate
 #: model_terms:ir.actions.act_window,help:chti_stargate.action_stargate_planet
 msgid ""
 "Record a planet and its gate address (six coordinate glyphs + point of "
 "origin)."
-msgstr "Enregistrez une planète et son adresse de porte (six glyphes de coordonnées + point d'origine)."
+msgstr ""
+"Enregistrez une planète et son adresse de porte (six glyphes de coordonnées "
+"+ point d'origine)."
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_search
@@ -552,11 +883,55 @@ msgid "Region / Galaxy"
 msgstr "Région / Galaxie"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Report"
+msgstr "Compte-rendu"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Reset to Draft"
+msgstr "Réinitialiser en brouillon"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__activity_user_id
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__activity_user_id
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__activity_user_id
 msgid "Responsible User"
 msgstr "Utilisateur responsable"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__date_end
+msgid "Return"
+msgstr "Retour"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_form
+msgid "SG-1"
+msgstr ""
+
+#. module: chti_stargate
+#: model:ir.model,name:chti_stargate.model_stargate_mission
+msgid "SGC Mission Report"
+msgstr "Compte-rendu de mission SGC"
+
+#. module: chti_stargate
+#: model:ir.ui.menu,name:chti_stargate.menu_stargate_ops_root
+msgid "SGC Operations"
+msgstr "Opérations SGC"
+
+#. module: chti_stargate
+#: model:ir.model,name:chti_stargate.model_stargate_team
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_form
+msgid "SGC Team"
+msgstr "Équipe SGC"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_list
+msgid "SGC Teams"
+msgstr "Équipes SGC"
+
+#. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__designation
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__designation
 msgid "SGC catalog code, e.g. P3X-116."
 msgstr "Code catalogue SGC, par ex. P3X-116."
@@ -574,9 +949,35 @@ msgid "SVG Shape"
 msgstr "Forme SVG"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_form
+msgid "Schedule"
+msgstr "Planifier"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__state__scheduled
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+msgid "Scheduled"
+msgstr "Planifiée"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_team__specialty__scientific
+msgid "Scientific"
+msgstr "Scientifique"
+
+#. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_team__specialty__search_rescue
+msgid "Search & Rescue"
+msgstr "Recherche et sauvetage"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__specialty
+msgid "Specialty"
+msgstr "Spécialité"
+
+#. module: chti_stargate
 #: model:ir.ui.menu,name:chti_stargate.menu_stargate_root
 msgid "Stargate"
-msgstr "Stargate"
+msgstr ""
 
 #. module: chti_stargate
 #: model:ir.model,name:chti_stargate.model_stargate_planet
@@ -594,7 +995,15 @@ msgid "Stargate Glyph"
 msgstr "Glyphe Stargate"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__state
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+msgid "Status"
+msgstr "Statut"
+
+#. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__activity_state
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__activity_state
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__activity_state
 msgid ""
 "Status based on activities\n"
 "Overdue: Due date is already passed\n"
@@ -607,6 +1016,12 @@ msgstr ""
 "Planifié : activités futures."
 
 #. module: chti_stargate
+#: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_mission__state__success
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+msgid "Success"
+msgstr "Succès"
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__image
 msgid "Symbol Image"
 msgstr "Image du symbole"
@@ -617,12 +1032,41 @@ msgid "Symbols"
 msgstr "Symboles"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+msgid "Team"
+msgstr "Équipe"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__leader_id
+msgid "Team Leader"
+msgstr "Chef d'équipe"
+
+#. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__name
+msgid "Team designation, e.g. SG-1."
+msgstr "Désignation de l'équipe, par ex. SG-1."
+
+#. module: chti_stargate
+#: model:ir.actions.act_window,name:chti_stargate.action_stargate_team
+#: model:ir.ui.menu,name:chti_stargate.menu_stargate_team
+msgid "Teams"
+msgstr "Équipes"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__threat_level
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
+msgid "Threat Level"
+msgstr "Niveau de menace"
+
+#. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_dial_log_search
 msgid "Today"
 msgstr "Aujourd'hui"
 
 #. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__activity_exception_decoration
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__activity_exception_decoration
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__activity_exception_decoration
 msgid "Type of the exception activity on record."
 msgstr "Type de l'activité d'exception sur l'enregistrement."
 
@@ -639,6 +1083,18 @@ msgid "Visited"
 msgstr "Visité"
 
 #. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid "Visiter chti-tech.eu →"
+msgstr "Visiter chti-tech.eu →"
+
+#. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__malp_recon
+msgid ""
+"Whether a MALP performed remote reconnaissance before sending the team."
+msgstr "Indique si un MALP a effectué une reconnaissance à distance avant d'envoyer l'équipe."
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__success
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_dial_log_search
 msgid "Wormhole Established"
@@ -651,6 +1107,22 @@ msgid "Wormhole established"
 msgstr "Vortex établi"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_kanban
+msgid "members"
+msgstr "membres"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_kanban
+msgid "missions"
+msgstr "missions"
+
+#. module: chti_stargate
+#. odoo-javascript
+#: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
+msgid "À propos · CHTI-TECH"
+msgstr "À propos · CHTI-TECH"
+
+#. module: chti_stargate
 #. odoo-javascript
 #: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
 msgid "— Quick dial a destination —"
@@ -660,4 +1132,4 @@ msgstr "— Composition rapide d'une destination —"
 #. odoo-javascript
 #: code:addons/chti_stargate/static/src/dialing_computer/dialing_computer.xml:0
 msgid "⟵ Odoo"
-msgstr "⟵ Odoo"
+msgstr ""
