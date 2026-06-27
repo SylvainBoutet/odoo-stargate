@@ -18,7 +18,7 @@ Backend management first; an immersive OWL "Dialing Computer" interface
 (reproducing the on-screen dialing computer) comes next.
 """,
     'author': "CHTI-TECH",
-    'website': "https://chti-tech.fr",
+    'website': "https://chti-tech.eu",
     'license': 'LGPL-3',
     'depends': ['base', 'mail', 'web'],
     'data': [
