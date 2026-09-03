@@ -6,6 +6,21 @@
             <t t-set="html_data" t-value="{'class': 'o_stargate_public_html'}"/>
             <t t-set="no_header" t-value="True"/>
             <t t-set="no_footer" t-value="True"/>
+            <!--
+                The page hides the site header on purpose: a dialing computer
+                with a navbar on top is not a dialing computer. That was fine
+                while the only way here was typing the address; reached from a
+                menu, it becomes a room with no door.
+
+                A bar of its own rather than the site header back: it stays out
+                of the way, and it names where it goes.
+            -->
+            <nav class="o_stargate_backbar">
+                <a href="/" class="o_stargate_backbar__link">
+                    <span aria-hidden="true">←</span>
+                    <span t-out="website.name or 'Accueil'"/>
+                </a>
+            </nav>
             <div class="o_stargate_public">
                 <owl-component name="chti_stargate.DialingComputerPublic"/>
             </div>

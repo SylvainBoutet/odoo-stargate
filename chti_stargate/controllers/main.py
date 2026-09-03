@@ -11,7 +11,12 @@ COORDINATE_FIELDS = [
 class StargatePublic(http.Controller):
     """Public, login-free access to the immersive dialing computer."""
 
-    @http.route('/stargate', type='http', auth='public', sitemap=True)
+    # website=True is what puts request.website in the rendering values.
+    # Without it web.frontend_layout raises KeyError: 'website' as soon
+    # as a website theme is installed -- the page renders until it does
+    # not, and the cause is nowhere near the symptom.
+    @http.route('/stargate', type='http', auth='public', website=True,
+                sitemap=True)
     def stargate_page(self, **kw):
         return request.render('chti_stargate.dialing_public_page')
 

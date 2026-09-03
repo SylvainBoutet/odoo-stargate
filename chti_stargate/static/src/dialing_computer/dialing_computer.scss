@@ -547,3 +547,50 @@ $sg-chti: #92d050; // vert marque CHTI-TECH
     0%, 100% { opacity: 0.5; }
     50%      { opacity: 1; }
 }
+
+// ---------------------------------------------------------------------------
+// Back bar
+//
+// The public page hides the site header on purpose. Reached from a menu
+// rather than by typing the address, it needs one way out and no more: a thin
+// bar, out of the way, naming where it goes rather than saying "back".
+//
+// position: fixed and not sticky: the dialing computer lays itself out over
+// the full viewport, and a bar in the flow would be covered by it.
+// ---------------------------------------------------------------------------
+.o_stargate_backbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    padding: .5rem .9rem;
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: .45rem;
+        padding: .35rem .7rem;
+        border-radius: 999px;
+        font-size: .82rem;
+        letter-spacing: .02em;
+        text-decoration: none;
+        color: rgba(255, 255, 255, .72);
+        background: rgba(0, 0, 0, .45);
+        border: 1px solid rgba(255, 255, 255, .14);
+        backdrop-filter: blur(6px);
+        transition: color .15s ease, border-color .15s ease;
+
+        &:hover,
+        &:focus-visible {
+            color: #fff;
+            border-color: rgba(255, 255, 255, .38);
+            text-decoration: none;
+        }
+
+        // Keyboard focus must stay visible on a dark, busy background.
+        &:focus-visible {
+            outline: 2px solid rgba(255, 255, 255, .75);
+            outline-offset: 2px;
+        }
+    }
+}
