@@ -1,0 +1,4 @@
+[submodule "communaute"]
+	path = communaute
+	url = git@github.com:SylvainBoutet/communaute.git
+	branch = 19.0
