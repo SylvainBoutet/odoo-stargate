@@ -19,6 +19,16 @@ export class DialingComputerPublic extends DialingComputer {
         return [data.glyphs || [], data.planets || []];
     }
 
+    /**
+     * Une page d'adresse ouvre l'ordinateur sur sa destination :
+     * /stargate?address=abydos charge la séquence, prête à composer.
+     */
+    _initialPlanetId() {
+        const slug = new URLSearchParams(window.location.search).get("address");
+        const planet = slug && this.state.planets.find((p) => p.slug === slug);
+        return planet ? planet.id : false;
+    }
+
     exit() {
         // Pas de retour vers le backend en accès public.
     }

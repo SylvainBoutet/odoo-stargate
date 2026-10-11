@@ -66,6 +66,10 @@ export class DialingComputer extends Component {
             }
             this.state.glyphs = glyphs;
             this.state.planets = planets;
+            const planetId = this._initialPlanetId();
+            if (planetId) {
+                this.selectPlanet(planetId);
+            }
         });
     }
 
@@ -226,9 +230,17 @@ export class DialingComputer extends Component {
         this.audio.stopAmbient();
     }
 
+    /** Destination à charger à l'ouverture (aucune par défaut). */
+    _initialPlanetId() {
+        return false;
+    }
+
     /** Pré-remplit la séquence depuis une destination connue. */
     loadPlanet(ev) {
-        const planetId = parseInt(ev.target.value, 10);
+        this.selectPlanet(parseInt(ev.target.value, 10));
+    }
+
+    selectPlanet(planetId) {
         this.state.selectedPlanetId = planetId || false;
         this.state.sequence = [];
         this.state.litChevrons = [];

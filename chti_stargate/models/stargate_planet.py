@@ -6,7 +6,7 @@ class StargatePlanet(models.Model):
 
     _name = 'stargate.planet'
     _description = "Stargate Destination"
-    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _inherit = ['mail.thread', 'mail.activity.mixin', 'website.seo.metadata']
     _order = 'name'
 
     name = fields.Char(string="Name", required=True, tracking=True)
@@ -27,6 +27,20 @@ class StargatePlanet(models.Model):
         tracking=True,
     )
     region = fields.Char(string="Region / Galaxy")
+    # The public address book serves one page per destination at
+    # /stargate/addresses/<slug>. Set once from the name and kept: renaming a
+    # destination must not move a page search engines already know.
+    slug = fields.Char(
+        string="URL Slug",
+        compute='_compute_slug', store=True, readonly=False,
+        copy=False, index=True,
+    )
+    summary = fields.Text(
+        string="Public Summary",
+        translate=True,
+        help="A few sentences shown on the destination's public page and used "
+             "as its search engine description.",
+    )
     image_1920 = fields.Image(string="Image", max_width=1920, max_height=1920)
     notes = fields.Html(string="Notes")
 
@@ -63,6 +77,8 @@ class StargatePlanet(models.Model):
     mission_ids = fields.One2many('stargate.mission', 'planet_id', string="Missions")
     mission_count = fields.Integer(string="Missions", compute='_compute_mission_count')
 
+    _slug_unique = models.Constraint('UNIQUE(slug)', "Destination URL slug must be unique.")
+
     def _default_point_of_origin(self):
         # Earth's point of origin (glyph 01). Safe before data is loaded.
         return self.env.ref('chti_stargate.glyph_01', raise_if_not_found=False)
@@ -73,6 +89,32 @@ class StargatePlanet(models.Model):
             'glyph_1_id', 'glyph_2_id', 'glyph_3_id',
             'glyph_4_id', 'glyph_5_id', 'glyph_6_id', 'glyph_7_id',
         ]
+
+    @api.depends('name')
+    def _compute_slug(self):
+        IrHttp = self.env['ir.http']
+        for planet in self:
+            if not planet.slug and planet.name:
+                planet.slug = IrHttp._slugify(planet.name)
+
+    def _address_glyphs(self):
+        """Coordinate glyphs in dialing order, then the point of origin."""
+        self.ensure_one()
+        glyphs = [self[field] for field in self._coordinate_fields if self[field]]
+        return glyphs, self.point_of_origin_id
+
+    def _default_website_meta(self):
+        # Without this every destination page carries the site description.
+        res = super()._default_website_meta()
+        description = self.summary or _(
+            "Stargate address of %(name)s: %(address)s. The glyphs to dial, "
+            "with their constellations.",
+            name=self.name, address=self.address_display or "",
+        )
+        res['default_opengraph']['og:description'] = description
+        res['default_twitter']['twitter:description'] = description
+        res['default_meta_description'] = description
+        return res
 
     @api.depends(
         'glyph_1_id', 'glyph_2_id', 'glyph_3_id', 'glyph_4_id',

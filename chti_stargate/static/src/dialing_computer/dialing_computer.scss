@@ -557,12 +557,19 @@ $sg-chti: #92d050; // vert marque CHTI-TECH
 //
 // position: fixed and not sticky: the dialing computer lays itself out over
 // the full viewport, and a bar in the flow would be covered by it.
+//
+// Centred: the computer's own top bar keeps its title on the left and its
+// controls on the right, and leaves the middle free. Pinned to the left, the
+// links covered the title.
 // ---------------------------------------------------------------------------
 .o_stargate_backbar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1030;
+    display: flex;
+    gap: .5rem;
     padding: .5rem .9rem;
 
     &__link {
@@ -593,4 +600,53 @@ $sg-chti: #92d050; // vert marque CHTI-TECH
             outline-offset: 2px;
         }
     }
+}
+
+// --- Public address book (/stargate/addresses) -------------------------------
+// Ordinary site pages: the glyph shapes are SVG in currentColor, so they take
+// the theme's text colour.
+.o_sg_glyph_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+    gap: 1rem;
+
+    &--address {
+        grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+    }
+}
+
+.o_sg_glyph_card {
+    margin: 0;
+    text-align: center;
+
+    &__shape {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto .4rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__number {
+        display: block;
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
+    }
+
+    &__name {
+        display: block;
+        font-size: .85rem;
+    }
+
+    &--origin {
+        text-align: center;
+    }
+}
+
+.o_sg_other_destinations {
+    columns: 14rem;
 }

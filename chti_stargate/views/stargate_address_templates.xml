@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        The public address book. The dialing computer at /stargate is drawn
+        in the browser, so a search engine reading it finds an empty page:
+        these pages carry the same addresses as HTML, one page per destination,
+        and each one leads back to the dialing computer with the address
+        loaded.
+    -->
+
+    <!-- One glyph: its shape, its number and its constellation. -->
+    <template id="address_glyph" name="Stargate glyph card">
+        <figure class="o_sg_glyph_card">
+            <span class="o_sg_glyph_card__shape" role="img"
+                  t-att-aria-label="glyph.name">
+                <t t-out="svgs.get(glyph.id)"/>
+            </span>
+            <figcaption>
+                <span class="o_sg_glyph_card__number" t-out="'%02d' % glyph.number"/>
+                <span class="o_sg_glyph_card__name" t-out="glyph.name"/>
+            </figcaption>
+        </figure>
+    </template>
+
+    <template id="address_book_page" name="Stargate address book">
+        <t t-set="additional_title" t-value="page_title"/>
+        <t t-call="website.layout">
+            <t t-set="website_meta_description">The known Stargate addresses from SG-1: every destination with its six coordinate glyphs, their constellations and the point of origin, ready to dial in the online dialing computer.</t>
+            <div id="wrap" class="o_sg_addresses">
+                <section class="container py-5">
+                    <h1 class="mb-3">Stargate addresses</h1>
+                    <p class="lead">A Stargate address is a sequence of symbols. Six of them are constellations: they locate the destination in space. The seventh is the point of origin, the symbol of the gate you are dialing from.</p>
+                    <p>The Milky Way gates carry 39 symbols. Reaching another galaxy takes an eighth one. Each address below opens its own page, and every page can send the address to the dialing computer, which dials it the way Stargate Command does.</p>
+                    <p><a href="/stargate" class="btn btn-primary">Open the dialing computer</a></p>
+                </section>
+                <section class="container pb-5">
+                    <h2 class="h3 mb-3">Destinations</h2>
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Designation</th>
+                                    <th scope="col">Address</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="planets" t-as="planet">
+                                    <td><a t-att-href="'/stargate/addresses/%s' % planet.slug" t-out="planet.name"/></td>
+                                    <td t-out="planet.designation or ''"/>
+                                    <td class="text-nowrap" t-out="planet.address_display or ''"/>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="container pb-5">
+                    <h2 class="h3 mb-3">The 39 glyphs of the Milky Way gates</h2>
+                    <p>Each symbol stands for a constellation, numbered as on the dialing computer. Number 1, the pyramid under the sun, is Earth's point of origin.</p>
+                    <div class="o_sg_glyph_grid">
+                        <t t-foreach="glyphs" t-as="glyph">
+                            <t t-call="chti_stargate.address_glyph"/>
+                        </t>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="address_page" name="Stargate destination">
+        <t t-set="additional_title" t-value="page_title"/>
+        <t t-call="website.layout">
+            <div id="wrap" class="o_sg_addresses">
+                <section class="container py-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/stargate/addresses">Stargate addresses</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" t-out="planet.name"/>
+                        </ol>
+                    </nav>
+                    <h1 class="mb-2" t-out="planet.name"/>
+                    <p t-if="planet.designation" class="text-muted mb-3">
+                        Designation: <span t-out="planet.designation"/>
+                    </p>
+                    <p t-if="planet.summary" class="lead" t-out="planet.summary"/>
+                    <h2 class="h4 mt-4 mb-3">The address</h2>
+                    <p>Dial the coordinate glyphs in this order, then the point of origin: <strong class="text-nowrap" t-out="planet.address_display"/>.</p>
+                    <div class="o_sg_glyph_grid o_sg_glyph_grid--address">
+                        <t t-foreach="coordinates" t-as="glyph">
+                            <t t-call="chti_stargate.address_glyph"/>
+                        </t>
+                        <t t-if="origin" t-set="glyph" t-value="origin"/>
+                        <div t-if="origin" class="o_sg_glyph_card--origin">
+                            <t t-call="chti_stargate.address_glyph"/>
+                            <span class="small text-muted">Point of origin</span>
+                        </div>
+                    </div>
+                    <p class="mt-4">
+                        <a t-att-href="'/stargate?address=%s' % planet.slug" class="btn btn-primary">Dial this address</a>
+                    </p>
+                </section>
+                <section class="container pb-5">
+                    <h2 class="h4 mb-3">Other destinations</h2>
+                    <ul class="o_sg_other_destinations list-unstyled">
+                        <li t-foreach="others" t-as="other">
+                            <a t-att-href="'/stargate/addresses/%s' % other.slug" t-out="other.name"/>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

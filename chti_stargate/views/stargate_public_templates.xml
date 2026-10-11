@@ -2,7 +2,9 @@
 <odoo>
     <!-- Public, login-free page hosting the immersive dialing computer (full screen). -->
     <template id="dialing_public_page" name="Stargate Dialing Computer">
+        <t t-set="additional_title">Stargate dialing computer</t>
         <t t-call="web.frontend_layout">
+            <t t-set="website_meta_description">An online Stargate dialing computer: pick a destination, watch the ring spin and the chevrons lock one by one, until the wormhole opens. The 36 known SG-1 addresses, free to dial.</t>
             <t t-set="html_data" t-value="{'class': 'o_stargate_public_html'}"/>
             <t t-set="no_header" t-value="True"/>
             <t t-set="no_footer" t-value="True"/>
@@ -20,7 +22,11 @@
                     <span aria-hidden="true">←</span>
                     <span t-out="website.name or 'Accueil'"/>
                 </a>
+                <a href="/stargate/addresses" class="o_stargate_backbar__link">Gate addresses</a>
             </nav>
+            <!-- The dialing computer is drawn in the browser: this heading is
+                 what names the page for a screen reader and a search engine. -->
+            <h1 class="visually-hidden">Stargate dialing computer</h1>
             <div class="o_stargate_public">
                 <owl-component name="chti_stargate.DialingComputerPublic"/>
             </div>

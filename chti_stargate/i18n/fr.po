@@ -4,17 +4,23 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 19.0+e\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-27 20:09+0000\n"
-"PO-Revision-Date: 2026-06-27 20:09+0000\n"
+"POT-Creation-Date: 2026-10-11 15:42+0000\n"
+"PO-Revision-Date: 2026-10-11 15:42+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: fr\n"
 "Plural-Forms: \n"
+
+#. module: chti_stargate
+#. odoo-python
+#: code:addons/chti_stargate/controllers/main.py:0
+msgid "%(name)s: Stargate address"
+msgstr "%(name)s : adresse de la Porte des étoiles"
 
 #. module: chti_stargate
 #. odoo-javascript
@@ -27,6 +33,31 @@ msgstr ""
 ": modules métier,\n"
 "                        intégrations, IoT et applications sur mesure.\n"
 "                        Valenciennes, Hauts-de-France."
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.dialing_public_page
+msgid "<span aria-hidden=\"true\">←</span>"
+msgstr "<span aria-hidden=\"true\">←</span>"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "<span class=\"small text-muted\">Point of origin</span>"
+msgstr "<span class=\"small text-muted\">Point d'origine</span>"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
+msgid ""
+"A Stargate address is a sequence of symbols. Six of them are constellations:"
+" they locate the destination in space. The seventh is the point of origin, "
+"the symbol of the gate you are dialing from."
+msgstr "Une adresse de la Porte des étoiles est une suite de symboles. Six d'entre eux sont des constellations : ils situent la destination dans l'espace. Le septième est le point d'origine, le symbole de la Porte depuis laquelle on compose."
+
+#. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_planet__summary
+msgid ""
+"A few sentences shown on the destination's public page and used as its "
+"search engine description."
+msgstr "Quelques phrases affichées sur la page publique de la destination, et reprises comme description pour les moteurs de recherche."
 
 #. module: chti_stargate
 #: model:ir.model.constraint,message:chti_stargate.constraint_stargate_glyph_number_gate_type_uniq
@@ -91,6 +122,7 @@ msgstr "Ajouter une destination Stargate"
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__address_display
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__address_display
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__address_display
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
 msgid "Address"
 msgstr "Adresse"
 
@@ -110,11 +142,21 @@ msgid "After-action report..."
 msgstr "Compte-rendu de fin de mission..."
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.dialing_public_page
+msgid ""
+"An online Stargate dialing computer: pick a destination, watch the ring spin"
+" and the chevrons lock one by one, until the wormhole opens. The 36 known "
+"SG-1 addresses, free to dial."
+msgstr "Un ordinateur de numérotation de la Porte des étoiles en ligne : choisissez une destination, regardez l'anneau tourner et les chevrons se verrouiller un à un, jusqu'à l'ouverture du vortex. Les 36 adresses connues de SG-1, à composer librement."
+
+#. module: chti_stargate
 #: model_terms:ir.actions.act_window,help:chti_stargate.action_stargate_mission
 msgid ""
 "Assign a team to a destination, set the objective and record the after-"
 "action report."
-msgstr "Affectez une équipe à une destination, définissez l'objectif et consignez le compte-rendu de mission."
+msgstr ""
+"Affectez une équipe à une destination, définissez l'objectif et consignez le"
+" compte-rendu de mission."
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__team_id
@@ -252,9 +294,21 @@ msgid "Departure"
 msgstr "Départ"
 
 #. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_abydos
+msgid ""
+"Desert world where the Stargate programme made its first trip, in the 1994 "
+"film. Home of the Abydonians, of Sha're and Skaara, and the world SG-1 "
+"returns to in the pilot episode, Children of the Gods."
+msgstr ""
+"Monde désertique où le programme Porte des étoiles a fait son premier "
+"voyage, dans le film de 1994. Patrie des Abydoniens, de Sha're et de Skaara,"
+" et monde où SG-1 retourne dans l'épisode pilote, Children of the Gods."
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__designation
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__designation
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__name
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
 msgid "Designation"
 msgstr "Désignation"
 
@@ -264,13 +318,24 @@ msgid "Designation / Name"
 msgstr "Désignation / Nom"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "Designation:"
+msgstr "Désignation :"
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__planet_id
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__planet_id
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_dial_log_search
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_form
 msgid "Destination"
 msgstr "Destination"
+
+#. module: chti_stargate
+#: model:ir.model.constraint,message:chti_stargate.constraint_stargate_planet_slug_unique
+msgid "Destination URL slug must be unique."
+msgstr "L'adresse de page d'une destination doit être unique."
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_form
@@ -280,6 +345,7 @@ msgstr "Nom de la destination"
 #. module: chti_stargate
 #: model:ir.actions.act_window,name:chti_stargate.action_stargate_planet
 #: model:ir.ui.menu,name:chti_stargate.menu_stargate_planet
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_list
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_search
 msgid "Destinations"
@@ -310,6 +376,16 @@ msgstr "Journal de composition"
 #: code:addons/chti_stargate/models/stargate_planet.py:0
 msgid "Dial Log — %s"
 msgstr "Journal de composition — %s"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "Dial the coordinate glyphs in this order, then the point of origin:"
+msgstr "Composez les glyphes de coordonnées dans cet ordre, puis le point d'origine :"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "Dial this address"
+msgstr "Composer cette adresse"
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_search
@@ -365,6 +441,24 @@ msgid "Draft"
 msgstr "Brouillon"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
+msgid ""
+"Each symbol stands for a constellation, numbered as on the dialing computer."
+" Number 1, the pyramid under the sun, is Earth's point of origin."
+msgstr "Chaque symbole représente une constellation, numérotée comme sur l'ordinateur de numérotation. Le numéro 1, la pyramide sous le soleil, est le point d'origine de la Terre."
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_earth
+msgid ""
+"Earth, called Tau'ri by the Goa'uld. Its gate is kept by Stargate Command "
+"under Cheyenne Mountain, Colorado. Dialed from another world, this is the "
+"address that brings a team home."
+msgstr ""
+"La Terre, appelée Tau'ri par les Goa'uld. Sa Porte est gardée par le "
+"Stargate Command, sous la montagne Cheyenne, au Colorado. Composée depuis un"
+" autre monde, c'est l'adresse qui ramène une équipe à la maison."
+
+#. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_search
 msgid "Extra-galactic (8 symbols)"
 msgstr "Extra-galactique (8 symboles)"
@@ -384,6 +478,15 @@ msgstr "Échec"
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
 msgid "Failed / MIA"
 msgstr "Échec / Disparu"
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_edora
+msgid ""
+"Farming world where O'Neill is stranded after a meteor storm buries the "
+"gate, in the episode A Hundred Days."
+msgstr ""
+"Monde agricole où O'Neill reste bloqué après qu'une pluie de météores a "
+"enseveli la Porte, dans l'épisode A Hundred Days."
 
 #. module: chti_stargate
 #: model_terms:ir.actions.act_window,help:chti_stargate.action_stargate_team
@@ -435,6 +538,11 @@ msgstr "Adresse de porte"
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_search
 msgid "Gate Type"
 msgstr "Type de porte"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.dialing_public_page
+msgid "Gate addresses"
+msgstr "Adresses de la Porte"
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_glyph_form
@@ -515,6 +623,26 @@ msgid "High"
 msgstr "Élevé"
 
 #. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_martin_lloyd
+msgid ""
+"Homeworld of Martin Lloyd, the alien living on Earth who believes he is a "
+"conspiracy theorist, in the episode Point of No Return."
+msgstr ""
+"Monde d'origine de Martin Lloyd, l'extraterrestre installé sur Terre qui se "
+"croit adepte des théories du complot, dans l'épisode Point of No Return."
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_othala
+msgid ""
+"Homeworld of the Asgard, in the Ida galaxy. Reaching it takes an eighth "
+"symbol and far more power than a single gate gives: O'Neill dials it in The "
+"Fifth Race."
+msgstr ""
+"Monde natal des Asgard, dans la galaxie d'Ida. Il faut un huitième symbole "
+"et bien plus d'énergie qu'une Porte seule n'en fournit : O'Neill la compose "
+"dans l'épisode The Fifth Race."
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__id
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__id
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__id
@@ -551,8 +679,11 @@ msgstr "Si coché, de nouveaux messages requièrent votre attention."
 
 #. module: chti_stargate
 #: model:ir.model.fields,help:chti_stargate.field_stargate_mission__message_has_error
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__message_has_sms_error
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__message_has_error
+#: model:ir.model.fields,help:chti_stargate.field_stargate_planet__message_has_sms_error
 #: model:ir.model.fields,help:chti_stargate.field_stargate_team__message_has_error
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si coché, certains messages ont une erreur de livraison."
 
@@ -572,6 +703,17 @@ msgstr "En cours"
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_is_follower
 msgid "Is Follower"
 msgstr "Est abonné"
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_chulak
+msgid ""
+"Jaffa world ruled by the Goa'uld Apophis, and Teal'c's homeworld. SG-1 goes "
+"there in the pilot episode, where Teal'c turns against Apophis and joins the"
+" team."
+msgstr ""
+"Monde jaffa gouverné par le Goa'uld Apophis, et monde natal de Teal'c. SG-1 "
+"s'y rend dans l'épisode pilote, où Teal'c se retourne contre Apophis et "
+"rejoint l'équipe."
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_dial_log_search
@@ -823,14 +965,45 @@ msgid "Odoo"
 msgstr ""
 
 #. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_nid_base
+msgid ""
+"Off-world base of a rogue cell of the NID, stealing alien technology behind "
+"Stargate Command's back, in the episode Shades of Grey."
+msgstr ""
+"Base hors du monde d'une cellule dissidente du NID, qui vole des "
+"technologies extraterrestres dans le dos du Stargate Command, dans l'épisode"
+" Shades of Grey."
+
+#. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
 msgid "Ongoing"
 msgstr "En cours"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
+msgid "Open the dialing computer"
+msgstr "Ouvrir l'ordinateur de numérotation"
+
+#. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_glyph_form
 msgid "Optional inline SVG markup for the dialing interface."
 msgstr "Balisage SVG en ligne optionnel pour l'interface de numérotation."
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_tollan
+msgid ""
+"Original homeworld of the Tollan, a human civilisation far ahead of Earth. "
+"In the first-season episode Enigma, SG-1 evacuates the survivors as the "
+"planet tears itself apart."
+msgstr ""
+"Monde d'origine des Tollans, une civilisation humaine très en avance sur la "
+"Terre. Dans l'épisode Enigma de la première saison, SG-1 évacue les "
+"survivants alors que la planète se disloque."
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "Other destinations"
+msgstr "Autres destinations"
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_planet_form
@@ -845,12 +1018,26 @@ msgid "Pegasus"
 msgstr "Pégase"
 
 #. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_land_of_light
+msgid ""
+"Planet of the Land of Light, where SG-1 meets a disease that turns people "
+"into primitives, in the first-season episode The Broca Divide."
+msgstr ""
+"Planète du Pays de lumière, où SG-1 rencontre une maladie qui rend les gens "
+"primitifs, dans l'épisode The Broca Divide de la première saison."
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_glyph__is_point_of_origin
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__point_of_origin_id
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_glyph_kanban
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_glyph_search
 msgid "Point of Origin"
 msgstr "Point d'origine"
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__summary
+msgid "Public Summary"
+msgstr "Résumé public"
 
 #. module: chti_stargate
 #. odoo-javascript
@@ -905,6 +1092,11 @@ msgid "Return"
 msgstr "Retour"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__is_seo_optimized
+msgid "SEO optimized"
+msgstr ""
+
+#. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_form
 msgid "SG-1"
 msgstr ""
@@ -935,6 +1127,13 @@ msgstr "Équipes SGC"
 #: model:ir.model.fields,help:chti_stargate.field_stargate_planet__designation
 msgid "SGC catalog code, e.g. P3X-116."
 msgstr "Code catalogue SGC, par ex. P3X-116."
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__message_has_sms_error
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__message_has_sms_error
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
 
 #. module: chti_stargate
 #. odoo-javascript
@@ -970,6 +1169,11 @@ msgid "Search & Rescue"
 msgstr "Recherche et sauvetage"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__seo_name
+msgid "Seo name"
+msgstr ""
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__specialty
 msgid "Specialty"
 msgstr "Spécialité"
@@ -993,6 +1197,27 @@ msgstr "Journal de composition Stargate"
 #: model:ir.model,name:chti_stargate.model_stargate_glyph
 msgid "Stargate Glyph"
 msgstr "Glyphe Stargate"
+
+#. module: chti_stargate
+#. odoo-python
+#: code:addons/chti_stargate/models/stargate_planet.py:0
+msgid ""
+"Stargate address of %(name)s: %(address)s. The glyphs to dial, with their "
+"constellations."
+msgstr "Adresse de la Porte des étoiles de %(name)s : %(address)s. Les glyphes à composer, avec leurs constellations."
+
+#. module: chti_stargate
+#. odoo-python
+#: code:addons/chti_stargate/controllers/main.py:0
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "Stargate addresses"
+msgstr "Adresses de la Porte des étoiles"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.dialing_public_page
+msgid "Stargate dialing computer"
+msgstr "Ordinateur de numérotation de la Porte des étoiles"
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__state
@@ -1053,6 +1278,43 @@ msgid "Teams"
 msgstr "Équipes"
 
 #. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
+msgid "The 39 glyphs of the Milky Way gates"
+msgstr "Les 39 glyphes des Portes de la Voie lactée"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
+msgid ""
+"The Milky Way gates carry 39 symbols. Reaching another galaxy takes an "
+"eighth one. Each address below opens its own page, and every page can send "
+"the address to the dialing computer, which dials it the way Stargate Command"
+" does."
+msgstr "Les Portes de la Voie lactée portent 39 symboles. Pour rejoindre une autre galaxie, il en faut un huitième. Chaque adresse ci-dessous ouvre sa propre page, et chaque page peut envoyer l'adresse à l'ordinateur de numérotation, qui la compose comme le fait le Stargate Command."
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "The address"
+msgstr "L'adresse"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_book_page
+msgid ""
+"The known Stargate addresses from SG-1: every destination with its six "
+"coordinate glyphs, their constellations and the point of origin, ready to "
+"dial in the online dialing computer."
+msgstr "Les adresses connues de la Porte des étoiles dans SG-1 : chaque destination avec ses six glyphes de coordonnées, leurs constellations et le point d'origine, prêtes à composer dans l'ordinateur de numérotation en ligne."
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_tollana
+msgid ""
+"The world the Tollan settled after losing their homeworld. They keep their "
+"technology to themselves, and refuse to share it with Earth."
+msgstr ""
+"Le monde où les Tollans se sont installés après la perte de leur planète. "
+"Ils gardent leur technologie pour eux et refusent de la partager avec la "
+"Terre."
+
+#. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__threat_level
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_mission_search
 msgid "Threat Level"
@@ -1069,6 +1331,11 @@ msgstr "Aujourd'hui"
 #: model:ir.model.fields,help:chti_stargate.field_stargate_team__activity_exception_decoration
 msgid "Type of the exception activity on record."
 msgstr "Type de l'activité d'exception sur l'enregistrement."
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__slug
+msgid "URL Slug"
+msgstr "Adresse de page"
 
 #. module: chti_stargate
 #: model:ir.model.fields.selection,name:chti_stargate.selection__stargate_glyph__gate_type__universe
@@ -1089,10 +1356,74 @@ msgid "Visiter chti-tech.eu →"
 msgstr "Visiter chti-tech.eu →"
 
 #. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_mission__website_message_ids
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__website_message_ids
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_team__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: chti_stargate
+#: model:ir.model.fields,help:chti_stargate.field_stargate_mission__website_message_ids
+#: model:ir.model.fields,help:chti_stargate.field_stargate_planet__website_message_ids
+#: model:ir.model.fields,help:chti_stargate.field_stargate_team__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__website_meta_description
+msgid "Website meta description"
+msgstr ""
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__website_meta_keywords
+msgid "Website meta keywords"
+msgstr ""
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__website_meta_title
+msgid "Website meta title"
+msgstr ""
+
+#. module: chti_stargate
+#: model:ir.model.fields,field_description:chti_stargate.field_stargate_planet__website_meta_og_img
+msgid "Website opengraph image"
+msgstr ""
+
+#. module: chti_stargate
 #: model:ir.model.fields,help:chti_stargate.field_stargate_mission__malp_recon
 msgid ""
 "Whether a MALP performed remote reconnaissance before sending the team."
-msgstr "Indique si un MALP a effectué une reconnaissance à distance avant d'envoyer l'équipe."
+msgstr ""
+"Indique si un MALP a effectué une reconnaissance à distance avant d'envoyer "
+"l'équipe."
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_euronda
+msgid ""
+"World of the Eurondans, who ask Earth for help in their war, in the episode "
+"The Other Side. SG-1 learns what that war is about, and walks away."
+msgstr ""
+"Monde des Eurondiens, qui demandent l'aide de la Terre dans leur guerre, "
+"dans l'épisode The Other Side. SG-1 découvre l'objet de cette guerre, et "
+"s'en retire."
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_ktau
+msgid ""
+"World protected by the Asgard. In the episode Red Sky, a dialing from SG-1 "
+"turns its sun red, and the team has to undo it."
+msgstr ""
+"Monde protégé par les Asgard. Dans l'épisode Red Sky, une connexion de SG-1 "
+"fait virer son soleil au rouge, et l'équipe doit réparer les dégâts."
+
+#. module: chti_stargate
+#: model:stargate.planet,summary:chti_stargate.planet_kheb
+msgid ""
+"World where Oma Desala, an ascended being, keeps watch. SG-1 seeks it out in"
+" the episode Maternal Instinct."
+msgstr ""
+"Monde où veille Oma Desala, un être élevé. SG-1 le cherche dans l'épisode "
+"Maternal Instinct."
 
 #. module: chti_stargate
 #: model:ir.model.fields,field_description:chti_stargate.field_stargate_dial_log__success
@@ -1105,6 +1436,11 @@ msgstr "Vortex établi"
 #: code:addons/chti_stargate/models/stargate_planet.py:0
 msgid "Wormhole established"
 msgstr "Vortex établi"
+
+#. module: chti_stargate
+#: model_terms:ir.ui.view,arch_db:chti_stargate.address_page
+msgid "breadcrumb"
+msgstr "fil d'Ariane"
 
 #. module: chti_stargate
 #: model_terms:ir.ui.view,arch_db:chti_stargate.view_stargate_team_kanban

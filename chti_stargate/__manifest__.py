@@ -1,6 +1,6 @@
 {
     'name': "Chti Stargate",
-    'version': '19.0.1.0.0',
+    'version': '19.0.1.1.0',
     'category': 'Productivity',
     'summary': "Stargate address book: glyphs, gate addresses and a dialing computer (CHTI-TECH).",
     'description': """
@@ -20,7 +20,7 @@ Backend management first; an immersive OWL "Dialing Computer" interface
     'author': "CHTI-TECH",
     'website': "https://chti-tech.eu",
     'license': 'LGPL-3',
-    'depends': ['base', 'mail', 'web'],
+    'depends': ['base', 'mail', 'web', 'website'],
     'data': [
         'security/ir.model.access.csv',
         'data/stargate_glyph_data.xml',
@@ -33,6 +33,7 @@ Backend management first; an immersive OWL "Dialing Computer" interface
         'views/stargate_mission_views.xml',
         'views/stargate_dialing_computer.xml',
         'views/stargate_public_templates.xml',
+        'views/stargate_address_templates.xml',
         'views/stargate_menus.xml',
     ],
     'assets': {
@@ -50,6 +51,7 @@ Backend management first; an immersive OWL "Dialing Computer" interface
             'chti_stargate/static/src/dialing_computer/dialing_computer.xml',
         ],
     },
+    'post_init_hook': 'post_init_hook',
     'installable': True,
     'application': True,
     'auto_install': False,
